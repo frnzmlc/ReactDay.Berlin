@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Success!\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FrontendAmsterdam/ReactDay.de.git"
+    "url": "git+https://github.com/React-Amsterdam/FrontendAmsterdam.com.git"
   },
   "keywords": [],
   "author": "PixelsCommander <denis.radin@gmail.com> (http://pixelscommander.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FrontendAmsterdam/ReactDay.de/issues"
+    "url": "https://github.com/React-Amsterdam/FrontendAmsterdam.com/issues"
   },
-  "homepage": "https://github.com/FrontendAmsterdam/ReactDay.de#readme",
+  "homepage": "https://github.com/React-Amsterdam/FrontendAmsterdam.com#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.7",

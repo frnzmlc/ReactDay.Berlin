@@ -1041,11 +1041,13 @@
 		display: flex;
 		top: 0;
 		bottom: 0;
+		left: 0;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
 		opacity: 0;
 		color: #333;
+		text-align: center;
 
 		&:after{
         	content: '';

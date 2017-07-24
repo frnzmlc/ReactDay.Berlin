@@ -540,9 +540,10 @@ h6 {
         padding-top: 82px; } }
 
 .logo {
-  height: 52px;
+  height: 70px;
   width: 210px;
-  z-index: 2; }
+  z-index: 2;
+  margin: -10px 0; }
   .logo__link {
     font-weight: 400;
     font-size: 20px;
@@ -1315,11 +1316,13 @@ h6 {
     display: flex;
     top: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    color: #333; }
+    color: #333;
+    text-align: center; }
     .sponsors-list__link:after {
       content: '';
       width: 0.5em;
@@ -1449,9 +1452,9 @@ h6 {
           text-align: center; } }
 
 .f-logo {
-  height: 52px;
+  height: 70px;
   width: 210px;
-  margin: 0 20px 0 0; }
+  margin: -10px 20px -10px 0; }
   .f-logo__link {
     font-size: 20px;
     line-height: 1.16;

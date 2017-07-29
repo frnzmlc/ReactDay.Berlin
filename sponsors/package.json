@@ -1,22 +1,14 @@
 {
-  "name": "ReactDay.de",
+  "name": "ReactDay.Berlin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Success!\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/React-Amsterdam/FrontendAmsterdam.com.git"
+    "url": "git+https://github.com/FrontendAmsterdam/ReactDay.Berlin.git"
   },
-  "keywords": [],
-  "author": "PixelsCommander <denis.radin@gmail.com> (http://pixelscommander.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/React-Amsterdam/FrontendAmsterdam.com/issues"
-  },
-  "homepage": "https://github.com/React-Amsterdam/FrontendAmsterdam.com#readme",
   "dependencies": {
     "gulp": "^3.9.1"
   },

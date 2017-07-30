@@ -156,4 +156,6 @@ gulp.task('watch', ['sass', 'css', 'browser-sync'], function() {
 	gulp.watch('*.html', browserSync.reload);
 });
 
+gulp.task('build', ['sass', 'css', 'sprite']);
+
 gulp.task('default', ['watch']);

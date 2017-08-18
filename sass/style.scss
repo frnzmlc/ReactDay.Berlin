@@ -27,6 +27,10 @@ a {
 	color: #0680ba;
 	transition: all linear .1s;
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .clearfix:after {

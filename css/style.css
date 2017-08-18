@@ -434,6 +434,8 @@ a {
   color: #0680ba;
   transition: all linear .1s;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 .clearfix:after {
   clear: both;

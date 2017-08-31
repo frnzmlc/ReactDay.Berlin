@@ -975,12 +975,22 @@ h6 {
     flex: 0 1 25%; }
     .speakers-list__item:first-child {
       margin: 0 0 0 25%; }
-    .speakers-list__item:nth-child(3n-2) .speakers-list__content:after {
+    .speakers-list__item:nth-child(3n-2) {
       background: #ff0033; }
-    .speakers-list__item:nth-child(3n-1) .speakers-list__content:after {
+      .speakers-list__item:nth-child(3n-2) .speakers-list__content:after {
+        background: #ff0033; }
+    .speakers-list__item:nth-child(3n-1) {
       background: #ff9900; }
-    .speakers-list__item:nth-child(3n) .speakers-list__content:after {
+      .speakers-list__item:nth-child(3n-1) .speakers-list__content:after {
+        background: #ff9900; }
+    .speakers-list__item:nth-child(3n) {
       background: #3300ff; }
+      .speakers-list__item:nth-child(3n) .speakers-list__content:after {
+        background: #3300ff; }
+    .speakers-list__item.no-hover:hover .speakers-list__content {
+      transform: translateY(283px); }
+      .speakers-list__item.no-hover:hover .speakers-list__content:after {
+        opacity: .7; }
     .speakers-list__item:hover .speakers-list__content {
       transform: translateY(0); }
       .speakers-list__item:hover .speakers-list__content:after {

@@ -968,6 +968,11 @@ h6 {
   list-style: none;
   display: flex;
   flex-wrap: wrap; }
+  .speakers-list a {
+    color: #fff;
+    text-decoration: underline; }
+    .speakers-list a:hover {
+      text-decoration: none; }
   .speakers-list__item {
     position: relative;
     height: 566px;
@@ -1005,6 +1010,9 @@ h6 {
     position: relative;
     object-fit: cover;
     width: 100%; }
+    @media only screen and (max-width: 680px) {
+      .speakers-list__photo {
+        margin-top: -10%; } }
   .speakers-list__content {
     position: absolute;
     left: 0;
@@ -1118,9 +1126,9 @@ h6 {
   list-style: none; }
   .talks__item {
     display: flex;
-    margin: 46px 0 0; }
+    margin: 46px 0 40px; }
     .talks__item:first-child {
-      margin: 0; }
+      margin-top: 0; }
   .talks__left {
     width: 100%;
     max-width: 11.5%;
@@ -1152,29 +1160,27 @@ h6 {
     .talks__desc p {
       margin: 0; }
   .talks .c-section__content {
-    padding: 140px 0 140px 180px;
+    padding: 0px 0 140px 180px;
     max-width: 1180px; }
   @media only screen and (max-width: 1280px) {
     .talks .c-section__content {
-      padding: 140px 0 140px 220px; } }
+      padding: 0px 0 140px 220px; } }
   @media only screen and (max-width: 1040px) {
     .talks .c-section__content {
-      padding: 140px 0 140px 150px; } }
+      padding: 0px 0 140px 150px; } }
   @media only screen and (max-width: 680px) {
     .talks .c-section__content {
-      padding: 60px 0 60px 90px; } }
+      padding: 0px 0 60px 90px; } }
   @media only screen and (max-width: 480px) {
     .talks .c-section__content {
-      padding: 60px 0 60px 0; }
+      padding: 0px 0 60px 0; }
     .talks__item {
-      margin: 16px 0 0; }
+      margin-top: 16px; }
     .talks__left {
       min-width: 55px;
       position: relative;
       left: -3px; }
     .talks__time {
-      font-size: 16px; }
-    .talks__title {
       font-size: 16px; }
     .talks__company {
       font-size: 16px;
@@ -1211,7 +1217,7 @@ h6 {
     width: 32.6%;
     margin: 0 0 0 1%; }
     .follow-btns__item:first-child {
-      margin: 0; }
+      margin-top: 0; }
   .follow-btns__link {
     padding: 10px;
     display: block;

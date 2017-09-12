@@ -144,6 +144,7 @@
 		text-decoration: none;
 		letter-spacing: 0.1em;
 		border: 2px solid transparent;
+		transition: all ease-in-out 0.2s;
 
 		&:hover{
 			border-color: rgba(255, 255, 255, 0.1);
@@ -179,12 +180,20 @@
 			text-align: center;
 		}
 
+		&__link{
+			opacity: 0;
+		}
+
 		&.open{
 			visibility: visible;
 			display: block;
 			transform: translateY(0);
 
 			border-color: #30f;
+
+			.main-menu__link{
+				opacity: 1;
+			}
 		}
 	}
 

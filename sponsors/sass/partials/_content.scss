@@ -807,6 +807,11 @@
 	}
 }
 
+.table-wrap{
+	overflow-x: auto;
+	margin: 0 -10px 0 0;
+}
+
 .package-table{
 	width: 100%;
 	border-collapse: collapse;
@@ -1690,8 +1695,9 @@
 	@media only screen and (max-width : 680px) {
 
 		&__item{
-			height: 120px;
-			margin: 0 0 10px;
+			height: auto;
+			max-width: 50%;
+			margin: 0 0 30px;
 		}
 	}
 }

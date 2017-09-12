@@ -619,7 +619,8 @@ h6 {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.1em;
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    transition: all ease-in-out 0.2s; }
     .main-menu__link:hover {
       border-color: rgba(255, 255, 255, 0.1);
       background: rgba(255, 255, 255, 0.1);
@@ -645,11 +646,15 @@ h6 {
         display: block;
         margin: 0;
         text-align: center; }
+      .main-menu__link {
+        opacity: 0; }
       .main-menu.open {
         visibility: visible;
         display: block;
         transform: translateY(0);
-        border-color: #30f; } }
+        border-color: #30f; }
+        .main-menu.open .main-menu__link {
+          opacity: 1; } }
   @media only screen and (max-width: 480px) {
     .main-menu {
       padding: 72px 0 0; } }
@@ -1203,6 +1208,10 @@ h6 {
 @media only screen and (max-width: 680px) {
   .packages .c-section__content {
     padding: 90px 0 42px; } }
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 -10px 0 0; }
 
 .package-table {
   width: 100%;
@@ -1817,8 +1826,9 @@ h6 {
       margin: 0 0 20px; } }
   @media only screen and (max-width: 680px) {
     .sponsors-list__item {
-      height: 120px;
-      margin: 0 0 10px; } }
+      height: auto;
+      max-width: 50%;
+      margin: 0 0 30px; } }
 
 .follow {
   margin: 41px 0 0; }

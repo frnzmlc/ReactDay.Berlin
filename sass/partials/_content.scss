@@ -1026,18 +1026,12 @@
 	padding: 0;
 	margin: 10px 0 100px;
 	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
 
-	&__item{
+	&__item {
 		position: relative;
-		margin: 0 0 10px;
-		display: flex;
-		width: 50%;
-		height: 230px;
-		justify-content: center;
-		align-items: center;
-		padding: 0 10px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 25px 3.5%;
 
 		&:hover{
 			.sponsors-list__img{
@@ -1050,12 +1044,35 @@
 		}
 	}
 
-	&__img{
-		max-width: 100%;
-		height: auto;
+	&__img {
 		opacity: 1;
-
 		transition: all .2s;
+		max-width: 100%;
+	}
+
+	@media only screen and (max-width: 992px) {
+		.sponsors-gold &__item {
+		  width: 40%;
+		  text-align: center;
+		}
+
+		.sponsors-silver &__item {
+		  width: 35%;
+		}
+
+		.sponsors-bronze &__item,
+		.sponsors-partners &__item {
+		  width: 25%;
+		}
+
+		.sponsors-bronze &__item.vertical,
+		.sponsors-silver &__item.vertical {
+		  width: 65%;
+		}
+
+		.sponsors-partners &__item.vertical {
+		  width: 20%;
+		}
 	}
 
 	&__link{
@@ -1079,33 +1096,6 @@
 			display: inline-block;
 			transform: rotate(-90deg);
 			margin: 0 0 0 20px;
-		}
-	}
-
-	&.silver{
-		margin: 60px 0 76px;
-
-		.sponsors-list__item{
-			margin: 0 0 30px;
-			width: 25%;
-			height: 130px;
-			padding: 0 5px;
-		}
-	}
-
-	@media only screen and (max-width : 680px) {
-		margin: 10px 0 50px;
-
-		&__item{
-			height: 160px;
-		}
-
-		&.silver{
-			margin: 30px 0 10px;
-
-			.sponsors-list__item{
-				height: 80px;
-			}
 		}
 	}
 }

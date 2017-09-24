@@ -136,7 +136,7 @@
 	min-height: 100vh;
 	padding: 120px 0 120px;
 	color: #fff;
-	background: url(../img/bg-intro.jpg) center center no-repeat;
+	background: url(../img/bg-intro.jpg) center top no-repeat;
 	background-size: cover;
 
 	.container{
@@ -146,7 +146,7 @@
 	}
 
 	&__loc{
-		margin: 15px 0 87px;
+		margin: 15px 0 48px;
 		display: flex;
 	}
 
@@ -160,11 +160,11 @@
 	}
 
 	&__loc-title{
-		font-size: 13px;
+		font-size: 14px;
 		font-weight: 600;
 		text-transform: uppercase;
-		margin: 0 0 11px;
-		letter-spacing: 0.65em;
+		margin: 0 0 10px;
+		letter-spacing: 0.52em;
 	}
 
 	&__loc-desc{
@@ -174,20 +174,33 @@
 	}
 
 	&__title{
-		font-size: 100px;
+		font-size: 80px;
 		font-weight: 700;
-		margin: 16px 0 16px -6px;
+		letter-spacing: 0.01em;
+		margin: 16px 0 30px -6px;
 	}
 
 	&__subtitle{
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 300;
 		margin: 0
 	}
 
 	&__btn{
-		margin: 107px 0 0;
-		padding: 22px 36px 18px;
+		position: relative;
+		margin: 236px 0 0;
+		padding: 25px 36px 25px;
+
+		&:after{
+			content: "";
+			width: 100%;
+			height: 106%;
+			position: absolute;
+			left: -10px;
+			bottom: -7px;
+			background: #30fffd;
+			z-index: -1;
+		}
 	}
 
 	&__scroll{
@@ -482,24 +495,17 @@
 			margin: 0 0 0 25%;
 		}
 
-		&:nth-child(3n-2){
-			background: #ff0033;
+		&:nth-child(even){
+			background: #4C47E1;
 			.speakers-list__content:after{
-				background: #ff0033;
+				background: #4C47E1;
 			}
 		}
 
-		&:nth-child(3n-1){
-			background: #ff9900;
+		&:nth-child(odd){
+			background: #2801BE;
 			.speakers-list__content:after{
-				background: #ff9900;
-			}
-		}
-
-		&:nth-child(3n){
-			background: #3300ff;
-			.speakers-list__content:after{
-				background: #3300ff;
+				background: #2801BE;
 			}
 		}
 

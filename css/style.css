@@ -803,7 +803,8 @@ h6 {
   .intro__btn {
     position: relative;
     margin: 236px 0 0;
-    padding: 25px 36px 25px; }
+    padding: 25px 36px 25px;
+    box-shadow: 0 0 0 2px #fff; }
     .intro__btn:after {
       content: "";
       width: 100%;
@@ -843,6 +844,9 @@ h6 {
     width: 7px;
     height: 18px;
     fill: #fff; }
+  @media only screen and (max-height: 720px) {
+    .intro__btn {
+      margin: 136px 0 0; } }
   @media only screen and (max-width: 960px) {
     .intro__loc {
       margin: 0 0 30px; }

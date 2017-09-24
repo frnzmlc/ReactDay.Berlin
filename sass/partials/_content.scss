@@ -190,6 +190,7 @@
 		position: relative;
 		margin: 236px 0 0;
 		padding: 25px 36px 25px;
+		box-shadow: 0 0 0 2px #fff;
 
 		&:after{
 			content: "";
@@ -242,6 +243,13 @@
 		width: 7px;
 		height: 18px;
 		fill: #fff;
+	}
+
+	@media only screen and (max-height : 720px) {
+
+		&__btn{
+			margin: 136px 0 0;
+		}
 	}
 
 	@media only screen and (max-width : 960px) {

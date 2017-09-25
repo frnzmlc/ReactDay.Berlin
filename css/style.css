@@ -653,7 +653,7 @@ h6 {
       transition: all ease .5s;
       transform: translateY(-100%);
       visibility: hidden;
-      border-bottom: 4px solid transparent; }
+      border-bottom: 3px solid transparent; }
       .main-menu__item {
         display: block;
         margin: 0;
@@ -662,7 +662,7 @@ h6 {
         visibility: visible;
         display: block;
         transform: translateY(0);
-        border-color: #30f; } }
+        border-color: #fe2df8; } }
   @media only screen and (max-width: 480px) {
     .main-menu {
       padding: 72px 0 0; } }

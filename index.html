@@ -34,7 +34,8 @@
 				<ul class="main-menu">
 					<li class="main-menu__item"><a href="#location" class="main-menu__link">Location</a></li>
 					<li class="main-menu__item"><a href="#speakers" class="main-menu__link">Speakers</a></li>
-					<li class="main-menu__item"><a href="#talks" class="main-menu__link">Talks&schedule</a></li>
+					<li class="main-menu__item"><a href="#talks" class="main-menu__link">Talks</a></li>
+					<li class="main-menu__item"><a href="#follow" class="main-menu__link">Follow Us</a></li>
 					<li class="main-menu__item"><a href="#sponsors" class="main-menu__link">sponsors</a></li>
 				</ul>
 
@@ -281,6 +282,32 @@
 						</li>
 
 						<li class="speakers-list__item">
+							<div class="speakers-list__img-box"><img class="speakers-list__photo" src="pic/speakers/alex.jpg" /></div>
+							<div class="speakers-list__content">
+								<h4 class="speakers-list__name">Alex Migutsky</h4>
+								<p class="speakers-list__company">Microsoft, Germany</p>
+								<p class="speakers-list__desc">Alex builds web apps (currently at Microsoft) and coaches software developers (currently as a hobby).</p>
+							</div>
+
+							<ul class="socials-list">
+								<li class="socials-list__item">
+									<a class="socials-list__link" href="https://twitter.com/mr_mig_by">
+										<svg class="socials-list__icon socials-tw" role="img" aria-hidden="true">
+											<use xlink:href="img/sprite-inline.svg#socials-tw"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="socials-list__item">
+									<a class="socials-list__link" href="https://github.com/mr-mig">
+										<svg class="socials-list__icon socials-tw" role="img" aria-hidden="true">
+											<use xlink:href="img/sprite-inline.svg#socials-gh"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="speakers-list__item">
 							<div class="speakers-list__img-box"><img class="speakers-list__photo" src="pic/speakers/nikolas.jpg" /></div>
 							<div class="speakers-list__content">
 								<h4 class="speakers-list__name">Nikolas Burk</h4>
@@ -383,32 +410,6 @@
 								</li>
 							</ul>
 						</li>
-
-                        <li class="speakers-list__item">
-							<div class="speakers-list__img-box"><img class="speakers-list__photo" src="pic/speakers/alex.jpg" /></div>
-							<div class="speakers-list__content">
-								<h4 class="speakers-list__name">Alex Migutsky</h4>
-								<p class="speakers-list__company">Microsoft, Germany</p>
-								<p class="speakers-list__desc">Alex builds web apps (currently at Microsoft) and coaches software developers (currently as a hobby).</p>
-							</div>
-
-							<ul class="socials-list">
-								<li class="socials-list__item">
-									<a class="socials-list__link" href="https://twitter.com/mr_mig_by">
-										<svg class="socials-list__icon socials-tw" role="img" aria-hidden="true">
-											<use xlink:href="img/sprite-inline.svg#socials-tw"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="socials-list__item">
-									<a class="socials-list__link" href="https://github.com/mr-mig">
-										<svg class="socials-list__icon socials-tw" role="img" aria-hidden="true">
-											<use xlink:href="img/sprite-inline.svg#socials-gh"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -455,6 +456,20 @@
 									<!--<h3 class="talks__title">Conference opening</h3>-->
 								<!--</div>-->
 							<!--</li>-->
+
+							<li class="talks__item">
+								<!--<div class="talks__left">-->
+									<!--<p class="talks__time">09:50</p>-->
+								<!--</div>-->
+								<div class="talks__right">
+									<h3 class="talks__title">Mike Grabowski</h3>
+									<p class="talks__company">Callstack.io, Poland</p>
+									<p class="talks__theme">The power of interpolation</p>
+									<div class="talks__desc">
+										<p>One of the biggest benefits when choosing React Native is its declarative nature. Instead of laying out elements on screen manually, we tell React how our interface should look like for a given state. That, combined with React Native taking care of rendering, allows us to write things that would be hard or even impossible otherwise. One of such things are animations. Historically, we used to write them in an imperative and stateful manner. By design, these are hard to debug and - most importantly compose. In this talk we will take a look at writing animations in React Native by using Animated module. I will share with you what I have learned when writing a music player in React Native. We will explore how connecting interpolation with events coming out of music player can lead us to stable, declarative and performant music player.</p>
+									</div>
+								</div>
+							</li>
 
 							<li class="talks__item">
 								<!--<div class="talks__left">-->
@@ -534,6 +549,20 @@
 									<!--<p class="talks__time">09:50</p>-->
 								<!--</div>-->
 								<div class="talks__right">
+									<h3 class="talks__title">Alex Migutsky</h3>
+									<p class="talks__company">Microsoft, Germany</p>
+									<p class="talks__theme">How we React at Microsoft To-Do</p>
+									<div class="talks__desc">
+										<p>Microsoft To-Do is built with ❤️ using React, Redux and some magic. Let's dive under the hood and see what practices we use to deliver real world production app to the wide audience.</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="talks__item">
+								<!--<div class="talks__left">-->
+									<!--<p class="talks__time">09:50</p>-->
+								<!--</div>-->
+								<div class="talks__right">
 									<h3 class="talks__title">Nikolas Burk</h3>
 									<p class="talks__company">Graphcool, Germany</p>
 									<p class="talks__theme">GraphQL - The What, How and Why</p>
@@ -585,20 +614,6 @@
 									<p class="talks__theme">Beyond JavaScript: The Hidden Benefit of React Native</p>
 									<div class="talks__desc">
 										<p>This will be a fast journey through delivering React Native applications with languages different from JS. We'll talk (and code!) in TypeScript, Clojure, OCaml, and Elm. But, most importantly, we'll talk about why this freedomt choose your programming language is so important.</p>
-									</div>
-								</div>
-							</li>
-
-							<li class="talks__item">
-								<!--<div class="talks__left">-->
-									<!--<p class="talks__time">09:50</p>-->
-								<!--</div>-->
-								<div class="talks__right">
-									<h3 class="talks__title">Alex Migutsky</h3>
-									<p class="talks__company">Microsoft, Germany</p>
-									<p class="talks__theme">How we React at Microsoft To-Do</p>
-									<div class="talks__desc">
-										<p>Microsoft To-Do is built with ❤️ using React, Redux and some magic. Let's dive under the hood and see what practices we use to deliver real world production app to the wide audience.</p>
 									</div>
 								</div>
 							</li>

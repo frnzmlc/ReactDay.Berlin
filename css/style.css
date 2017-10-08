@@ -1154,13 +1154,13 @@ h6 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
-    margin: 0; }
-  .talks__company {
-    font-size: 18px;
-    margin: 6px 0 0;
+    margin: 0 0 10px; }
+  .talks__speaker-info {
+    font-size: 16px;
+    margin: 5px 0 20px;
     color: #666; }
-  .talks__theme {
-    margin: 30px 0 22px;
+  .talks__speaker-name {
+    margin: 0;
     font-size: 18px;
     font-weight: 600; }
   .talks__desc {

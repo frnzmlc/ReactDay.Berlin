@@ -504,16 +504,90 @@
 		}
 
 		&:nth-child(even){
+		}
+
+
+		&:nth-child(even).blue {
 			background: #4C47E1;
 			.speakers-list__content:after{
 				background: #4C47E1;
 			}
 		}
 
-		&:nth-child(odd){
+		&:nth-child(odd).blue {
 			background: #2801BE;
 			.speakers-list__content:after{
 				background: #2801BE;
+			}
+		}
+
+		&:nth-child(even).green {
+			background: #009828;
+			.speakers-list__content:after{
+				background: #009828;
+			}
+		}
+
+		&:nth-child(odd).green {
+			background: #00d438;
+			.speakers-list__content:after{
+				background: #00d438;
+			}
+		}
+
+		&:nth-child(even).darkred {
+			background: #bf0000;
+			.speakers-list__content:after{
+				background: #bf0000;
+			}
+		}
+
+		&:nth-child(odd).darkred {
+			background: #bf0000;
+			.speakers-list__content:after{
+				background: #bf0000;
+			}
+		}
+
+		&:nth-child(even).purple {
+			background: #a500a5;
+			.speakers-list__content:after{
+				background: #a500a5;
+			}
+		}
+
+		&:nth-child(odd).purple {
+			background: purple;
+			.speakers-list__content:after{
+				background: purple;
+			}
+		}
+
+		&:nth-child(even).red {
+			background: #dd4c39;
+			.speakers-list__content:after{
+				background: #dd4c39;
+			}
+		}
+
+		&:nth-child(odd).red {
+			background: #dd4c39;
+			.speakers-list__content:after{
+				background: #dd4c39;
+			}
+		}
+
+		&:nth-child(even).yellow {
+			background: #bfbf00;
+			.speakers-list__content:after{
+				background: #bfbf00;
+			}
+		}
+
+		&:nth-child(odd).yellow {
+			background: #bfbf00;
+			.speakers-list__content:after{
+				background: #bfbf00;
 			}
 		}
 
@@ -738,6 +812,10 @@
 
 		&:first-child{
 			margin-top: 0;
+		}
+
+		&:hover .tag {
+			opacity: 1;
 		}
 	}
 
@@ -1220,3 +1298,47 @@
 		height: 100%;
 	}
 }
+
+.tag {
+	display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+	opacity: .7;
+	transition: opacity .3s;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&.blue {
+		background: #2801BE;
+	}
+
+	&.green {
+		background: #00d438;
+	}
+
+	&.darkred {
+		background: #bf0000;
+	}
+
+	&.red {
+		background: #dd4c39;
+	}
+
+	&.yellow {
+		background: #bfbf00;
+	}
+
+	&.purple {
+		background: purple;
+	}
+
+	@media only screen and (max-width : 480px) {
+		font-size: 13px;
+	}
+}
+

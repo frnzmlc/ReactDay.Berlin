@@ -995,14 +995,54 @@ h6 {
     flex: 0 1 25%; }
     .speakers-list__item:first-child {
       margin: 0 0 0 25%; }
-    .speakers-list__item:nth-child(even) {
+    .speakers-list__item:nth-child(even).blue {
       background: #4C47E1; }
-      .speakers-list__item:nth-child(even) .speakers-list__content:after {
+      .speakers-list__item:nth-child(even).blue .speakers-list__content:after {
         background: #4C47E1; }
-    .speakers-list__item:nth-child(odd) {
+    .speakers-list__item:nth-child(odd).blue {
       background: #2801BE; }
-      .speakers-list__item:nth-child(odd) .speakers-list__content:after {
+      .speakers-list__item:nth-child(odd).blue .speakers-list__content:after {
         background: #2801BE; }
+    .speakers-list__item:nth-child(even).green {
+      background: #009828; }
+      .speakers-list__item:nth-child(even).green .speakers-list__content:after {
+        background: #009828; }
+    .speakers-list__item:nth-child(odd).green {
+      background: #00d438; }
+      .speakers-list__item:nth-child(odd).green .speakers-list__content:after {
+        background: #00d438; }
+    .speakers-list__item:nth-child(even).darkred {
+      background: #bf0000; }
+      .speakers-list__item:nth-child(even).darkred .speakers-list__content:after {
+        background: #bf0000; }
+    .speakers-list__item:nth-child(odd).darkred {
+      background: #bf0000; }
+      .speakers-list__item:nth-child(odd).darkred .speakers-list__content:after {
+        background: #bf0000; }
+    .speakers-list__item:nth-child(even).purple {
+      background: #a500a5; }
+      .speakers-list__item:nth-child(even).purple .speakers-list__content:after {
+        background: #a500a5; }
+    .speakers-list__item:nth-child(odd).purple {
+      background: purple; }
+      .speakers-list__item:nth-child(odd).purple .speakers-list__content:after {
+        background: purple; }
+    .speakers-list__item:nth-child(even).red {
+      background: #dd4c39; }
+      .speakers-list__item:nth-child(even).red .speakers-list__content:after {
+        background: #dd4c39; }
+    .speakers-list__item:nth-child(odd).red {
+      background: #dd4c39; }
+      .speakers-list__item:nth-child(odd).red .speakers-list__content:after {
+        background: #dd4c39; }
+    .speakers-list__item:nth-child(even).yellow {
+      background: #bfbf00; }
+      .speakers-list__item:nth-child(even).yellow .speakers-list__content:after {
+        background: #bfbf00; }
+    .speakers-list__item:nth-child(odd).yellow {
+      background: #bfbf00; }
+      .speakers-list__item:nth-child(odd).yellow .speakers-list__content:after {
+        background: #bfbf00; }
     .speakers-list__item.no-hover:hover .speakers-list__content {
       transform: translateY(283px); }
       .speakers-list__item.no-hover:hover .speakers-list__content:after {
@@ -1140,6 +1180,8 @@ h6 {
     margin: 46px 0 40px; }
     .talks__item:first-child {
       margin-top: 0; }
+    .talks__item:hover .tag {
+      opacity: 1; }
   .talks__left {
     width: 100%;
     max-width: 11.5%;
@@ -1461,6 +1503,33 @@ h6 {
     padding: 120px 90px 116px;
     flex-direction: column;
     height: 100%; }
+
+.tag {
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 10px;
+  opacity: .7;
+  transition: opacity .3s; }
+  .tag:hover {
+    opacity: 1; }
+  .tag.blue {
+    background: #2801BE; }
+  .tag.green {
+    background: #00d438; }
+  .tag.darkred {
+    background: #bf0000; }
+  .tag.red {
+    background: #dd4c39; }
+  .tag.yellow {
+    background: #bfbf00; }
+  .tag.purple {
+    background: purple; }
+  @media only screen and (max-width: 480px) {
+    .tag {
+      font-size: 13px; } }
 
 /* Footer
 -----------------------------------------------------------------------------*/

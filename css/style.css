@@ -1249,7 +1249,8 @@ h6 {
       position: relative;
       left: -3px; }
     .talks__time {
-      font-size: 16px; }
+      font-size: 16px;
+      line-height: 32px; }
     .talks__company {
       font-size: 16px;
       margin: 0; }

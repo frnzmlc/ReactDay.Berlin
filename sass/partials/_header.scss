@@ -23,7 +23,8 @@
 		}
 	}
 
-	&.sticky-header{
+	&.no-transition,
+	&.sticky-header {
 		background: rgba(0,0, 0, .75);
 
 		.logo span {

@@ -536,17 +536,17 @@ h6 {
     @media only screen and (min-width: 1024px) {
       .header .container {
         padding-left: 70px; } }
-  .header.sticky-header {
+  .header.no-transition, .header.sticky-header {
     background: rgba(0, 0, 0, 0.75); }
-    .header.sticky-header .logo span {
+    .header.no-transition .logo span, .header.sticky-header .logo span {
       opacity: 1; }
-    .header.sticky-header .container {
+    .header.no-transition .container, .header.sticky-header .container {
       padding: 15px 10px; }
       @media only screen and (min-width: 1024px) {
-        .header.sticky-header .container {
+        .header.no-transition .container, .header.sticky-header .container {
           padding-left: 70px; } }
     @media only screen and (max-width: 960px) {
-      .header.sticky-header .main-menu {
+      .header.no-transition .main-menu, .header.sticky-header .main-menu {
         padding-top: 82px; } }
 
 .logo {
@@ -681,6 +681,8 @@ h6 {
 .c-section {
   position: relative;
   z-index: 2; }
+  .c-section.mobile-margin-top {
+    margin-top: 80px; }
   .c-section__title {
     position: absolute;
     left: 70px;
@@ -1175,6 +1177,10 @@ h6 {
   padding: 0;
   margin: 2px 0;
   list-style: none; }
+  .talks__image {
+    padding: 15px 0; }
+    .talks__image img {
+      width: 100%; }
   .talks__item {
     display: flex;
     margin: 46px 0 40px; }
@@ -1210,8 +1216,17 @@ h6 {
     font-size: 16px;
     line-height: 1.88;
     color: #666; }
+    .jobs .talks__desc {
+      margin-bottom: 40px; }
+    .talks__desc strong {
+      font-weight: 700; }
     .talks__desc p {
-      margin: 0; }
+      margin: 0 0 10px; }
+  .talks__learn-more {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
   .talks .c-section__content {
     padding: 0px 0 140px 180px;
     max-width: 1180px; }

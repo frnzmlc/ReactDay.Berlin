@@ -676,6 +676,19 @@ h6 {
     .h-buy-btn {
       padding: 5px 10px 5px; } }
 
+.header-youtube {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative; }
+
+.header-youtube__iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
 /* Content
 -----------------------------------------------------------------------------*/
 .c-section {
@@ -1386,7 +1399,7 @@ h6 {
 
 .sponsors-list {
   padding: 0;
-  margin: 10px 0 100px;
+  margin: 10px 0 20px;
   list-style: none; }
   .sponsors-list__item {
     position: relative;

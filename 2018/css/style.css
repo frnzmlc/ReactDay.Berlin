@@ -870,10 +870,11 @@ h6 {
   overflow: hidden; }
   .section__head {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 86px 20px 0 0;
     z-index: 1;
-    position: relative; }
+    position: relative;
+    min-height: 90px; }
     .section__head .c-title {
       margin: 0; }
 
@@ -883,7 +884,11 @@ h6 {
   font-weight: bold;
   line-height: 1.41;
   color: #023753;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  left: 0; }
+  .c-title.clipthru {
+    color: #fff; }
 
 .intro {
   position: relative;
@@ -1489,20 +1494,22 @@ h6 {
 
 .location {
   background: #f4f4f4; }
-  .location .section__head {
-    max-width: 954px;
-    margin: 65px auto 35px; }
-  .location .container {
-    position: relative;
-    padding-top: 132px;
-    padding-bottom: 80px;
-    max-width: 1190px;
+  .location__map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1; }
+    .location__map #map {
+      width: 100%;
+      height: 100%; }
   .location__content {
     position: relative;
     padding: 10px 0;
     min-height: 588px;
-    width: 100%; }
+    width: 100%;
+    z-index: 2; }
   .location__address {
     position: absolute;
     width: 360px;
@@ -1531,7 +1538,18 @@ h6 {
     transform: translateX(-144%);
     top: 0;
     background: #230cea;
-    z-index: 0; }
+    z-index: 2; }
+  .location .section__head {
+    position: relative;
+    max-width: 954px;
+    margin: 65px auto 35px;
+    z-index: 1; }
+  .location .container {
+    position: relative;
+    padding-top: 132px;
+    padding-bottom: 80px;
+    max-width: 1190px;
+    z-index: 3; }
 
 .follow-us {
   padding: 40px; }
@@ -1574,10 +1592,11 @@ h6 {
   .sponsors__box-1 {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
     width: 1055px;
     height: 800px;
-    background-color: #230cea; }
+    background-color: #230cea;
+    transform: translateX(-335px); }
   .sponsors .container {
     max-width: 970px;
     padding-top: 116px;

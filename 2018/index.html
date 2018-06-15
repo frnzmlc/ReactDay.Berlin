@@ -201,7 +201,7 @@
 
 				<div class="event__wrap">
 					<div class="section__head">
-						<h3 class="c-title">Event</h3>
+						<h3 class="c-title js-clipthru">Event</h3>
 						
 						<p class="event__slogan">Are you into React, React Native, GraphQL<br/> and hungry  to learn from  the best?</p>
 					</div>
@@ -228,7 +228,7 @@
 			<div class="container">
 
 				<div class="section__head">
-					<h3 class="c-title">Speakers</h3>
+					<h3 class="c-title js-clipthru">Speakers</h3>
 				</div>
 
 				<ul class="speakers-list">
@@ -575,7 +575,7 @@
 			<div class="container">
 
 				<div class="section__head">
-					<h3 class="c-title">Talks & Shedule</h3>
+					<h3 class="c-title js-clipthru">Talks & Shedule</h3>
 				</div>
 
 				<div class="shedule-wrap">
@@ -662,8 +662,8 @@
 
 			</div>
 
-			<div class="talks__box-1"></div>
-			<div class="talks__box-2"></div>
+			<div class="talks__box-1" data-jq-clipthru="clipthru"></div>
+			<div class="talks__box-2" data-jq-clipthru="clipthru"></div>
 
 		</section>
 
@@ -673,7 +673,7 @@
 				<div class="location__content">
 
 					<div class="section__head">
-						<h3 class="c-title">Location</h3>
+						<h3 class="c-title js-clipthru">Location</h3>
 					</div>
 
 					<div class="location__address">
@@ -731,10 +731,217 @@
 						</form>
 					</div>
 				</div>
-
 			</div>
 
-			<div class="location__box-1"></div>
+			<div class="location__box-1" data-jq-clipthru="clipthru"></div>
+
+			<div class="location__map">
+				<div id="map"></div>
+
+				<script>
+				function initMap() {
+					var mapDiv = document.getElementById('map');
+					var map = new google.maps.Map(mapDiv, {
+						center: {lat: 52.525373, lng: 13.384852},
+						zoom: 16,
+						scrollwheel: false,
+						disableDefaultUI: true,
+						draggable: true
+					});
+
+					var styles = [
+						{
+							"featureType": "water",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#e9e9e9"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "landscape",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 17
+								}
+							]
+						},
+						{
+							"featureType": "road.highway",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 29
+								},
+								{
+									"weight": 0.2
+								}
+							]
+						},
+						{
+							"featureType": "road.arterial",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 18
+								}
+							]
+						},
+						{
+							"featureType": "road.local",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"featureType": "poi",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f5f5f5"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"featureType": "poi.park",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#dedede"
+								},
+								{
+									"lightness": 21
+								}
+							]
+						},
+						{
+							"elementType": "labels.text.stroke",
+							"stylers": [
+								{
+									"visibility": "on"
+								},
+								{
+									"color": "#ffffff"
+								},
+								{
+									"lightness": 16
+								}
+							]
+						},
+						{
+							"elementType": "labels.text.fill",
+							"stylers": [
+								{
+									"saturation": 36
+								},
+								{
+									"color": "#333333"
+								},
+								{
+									"lightness": 40
+								}
+							]
+						},
+						{
+							"elementType": "labels.icon",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						},
+						{
+							"featureType": "transit",
+							"elementType": "geometry",
+							"stylers": [
+								{
+									"color": "#f2f2f2"
+								},
+								{
+									"lightness": 19
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.fill",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 20
+								}
+							]
+						},
+						{
+							"featureType": "administrative",
+							"elementType": "geometry.stroke",
+							"stylers": [
+								{
+									"color": "#fefefe"
+								},
+								{
+									"lightness": 17
+								},
+								{
+									"weight": 1.2
+								}
+							]
+						}
+					];
+
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(52.524373, 13.389852),
+						map: map,
+						title: 'Kalkscheune',
+						icon: 'img/marker.svg'
+					});
+
+					map.setOptions({styles: styles});
+				}
+				</script>
+
+				<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZEocFpuybFyJZg92LhWsvIJdo56S34s&callback=initMap">
+				</script>
+				
+			</div>
 
 		</section>
 
@@ -742,7 +949,7 @@
 			<div class="container">
 
 				<div class="section__head">
-					<h3 class="c-title">Sponsors</h3>
+					<h3 class="c-title js-clipthru">Sponsors</h3>
 
 					<div class="sponsors__intro">
 						<p class="sponsors__info">Would like to work together with the most notable React community supporters in Berlin?</p>
@@ -835,7 +1042,7 @@
 
 			</div>
 
-			<div class="sponsors__box-1"></div>
+			<div class="sponsors__box-1" data-jq-clipthru="clipthru"></div>
 
 		</section>
 
@@ -843,7 +1050,7 @@
 			<div class="container">
 
 				<div class="section__head">
-					<h3 class="c-title">Previous year</h3>
+					<h3 class="c-title js-clipthru">Previous year</h3>
 
 					<div class="past__intro">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/q351XlTCdr8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -886,7 +1093,7 @@
 
 			</div>
 
-			<div class="past__box-1"></div>
+			<div class="past__box-1" data-jq-clipthru="clipthru"></div>
 
 		</section>
 

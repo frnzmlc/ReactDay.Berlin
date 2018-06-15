@@ -1,0 +1,59 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	background: #230cea;
+	min-height: 280px;
+	margin: 100px 0 0;
+
+	.container{
+		max-width: 1160px;
+		padding: 10px;
+	}
+
+	.socials{
+		&__item{
+			&:hover{
+				.socials__img{
+					fill: #fff;
+				}
+			}
+		}
+		
+		&__img{
+			fill: #fff;
+		}
+	}
+}
+
+.f-menu{
+	padding: 0;
+	margin: 40px 0;
+	list-style: none;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+	color: #fff;
+
+	&__item{
+		margin: 20px 0;
+	}
+
+	&__link{
+		text-decoration: none;
+		color: #fff;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.f-bg-1{
+	position: absolute;
+	height: 20px;
+	background: #fff;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}

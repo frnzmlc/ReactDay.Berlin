@@ -35,6 +35,11 @@
 		border: none;
 		outline: none;
 		cursor: pointer;
+		transition: all 0.1s;
+
+		&:hover{
+			background: #331cf7;
+		}
 	}
 
 	@media only screen and (max-width : 768px) {

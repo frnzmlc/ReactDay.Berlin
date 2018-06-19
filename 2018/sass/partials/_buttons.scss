@@ -16,8 +16,10 @@
 	display: flex;
 	align-items: center;
 	flex-shrink: 1;
+	transition: all 0.1s;
 
 	&:hover{
 		background: #ffdb52;
+		box-shadow: 2px 2px 0 0 #0f3754;
 	}
 }

@@ -18,6 +18,26 @@
 					fill: #fff;
 				}
 			}
+		
+			&:hover{
+				text-decoration: none;
+
+				.socials__img{
+					fill: #fff;
+				}
+
+				&:after{
+					content: '';
+					border-color: #fff;
+					background: rgba(0, 0, 0, 0.1);
+				}
+
+				.socials__link{
+					&:after{
+						background: rgba(255, 255, 255, 0.10);
+					}
+				}
+			}
 		}
 		
 		&__img{
@@ -27,6 +47,10 @@
 
 	@media only screen and (max-width : 768px) {
 		margin: 0 0 0;
+
+		.container{
+			padding: 10px 30px;
+		}
 	}
 }
 

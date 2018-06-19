@@ -25,7 +25,6 @@
 }
 
 .c-title{
-	font-family: $popp;
 	font-size: 64px;
 	font-weight: bold;
 	line-height: 1.41;
@@ -104,6 +103,18 @@
 						border-color: #fff;
 						background: rgba(0, 0, 0, 0.1);
 					}
+
+					.socials__link{
+						&:after{
+							background: rgba(255, 255, 255, 0.10);
+						}
+					}
+				}
+			}
+
+			&__link{
+				&:after{
+					background: transparent;
 				}
 			}
 		}
@@ -148,7 +159,6 @@
 	}
 
 	&__desc{
-		font-family: $popp;
 		font-size: 17px;
 		line-height: 1.76;
 		margin: 0 0 3px;
@@ -156,7 +166,6 @@
 	}
 
 	&__title{
-		font-family: $popp;
 		font-size: 44px;
 		font-weight: bold;
 		line-height: 1.36;
@@ -269,14 +278,12 @@
 	}
 
 	&__date{
-		font-family: $popp;
 		font-size: 28px;
 		font-weight: 600;
 		margin: 0 0 12px;
 	}
 
 	&__location{
-		font-family: $popp;
 		font-size: 14px;
 		line-height: 1.43;
 		margin: 12px 0;
@@ -320,6 +327,8 @@
 	}
 
 	@media only screen and (max-height : 700px) {
+
+		min-height: 650px;
 		
 		.bg-hand{
 			width: 38vh;
@@ -473,7 +482,6 @@
 	list-style: none;
 
 	&__item{
-		font-family: $popp;
 		font-size: 16px;
 		line-height: 1.25;
 		color: #ffffff;
@@ -483,7 +491,6 @@
 	&__num{
 		position: relative;
 		top: 1px;
-		font-family: $popp;
 		font-size: 20px;
 		font-weight: 600;
 		display: inline-block;
@@ -514,7 +521,6 @@
 
 	&__slogan{
 		opacity: 0.6;
-		font-family: $popp;
 		font-size: 16px;
 		line-height: 1.88;
 		color: #023753;
@@ -527,7 +533,6 @@
 	}
 
 	&__title{
-		font-family: $popp;
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 2;
@@ -542,7 +547,6 @@
 	}
 
 	&__desc{
-		font-family: $popp;
 		font-size: 16px;
 		line-height: 1.88;
 		color: #023753;
@@ -898,7 +902,6 @@
 	}
 
 	&__name{
-		font-family: $popp;
 		font-size: 26px;
 		font-weight: 600;
 		line-height: 1.15;
@@ -907,7 +910,6 @@
 	}
 
 	&__company{
-		font-family: $popp;
 		font-size: 14px;
 		line-height: 1.43;
 		color: #999999;
@@ -915,7 +917,6 @@
 	}
 
 	&__desc{
-		font-family: $popp;
 		font-size: 12px;
 		line-height: 1.67;
 		color: #023753;
@@ -1059,7 +1060,7 @@
 	@media only screen and (max-width : 768px) {
 		
 		.section__head{
-			margin: 14px 0 0;
+			margin: 4px 0 8px;
 			min-height: 48px;
 		}
 
@@ -1086,6 +1087,67 @@
 	background: #fff;
 	padding: 40px 40px 40px 60px;
 	margin: 0 auto 50px;
+
+	.slider-pro{
+		margin: 0;
+	}
+
+	.sp-slide{
+		padding: 0 50px 0 0;
+
+
+		@media only screen and (max-width : 768px) {
+				padding: 0 20px 0 0;
+		}
+
+
+		@media only screen and (max-width : 520px) {
+			position: relative;
+			padding: 0;
+			margin: 40px 0 0;
+
+			&:first-child{
+				margin: 0;
+			}
+		}
+	}
+		
+	.sp-thumbnail-container{
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		&:hover{
+			.shedule-nav__time,
+			.shedule-nav__title{
+				color: #033651;
+			}
+		}
+	}
+		
+	.sp-thumbnail-container.sp-selected-thumbnail{
+		.shedule-nav__time,
+		.shedule-nav__title{
+			color: #220ceb;
+		}
+	}
+
+	.sp-selected-thumbnail:before,
+	.sp-selected-thumbnail:after{
+		display: none;
+	}
+
+	@media only screen and (max-width : 1024px) {
+			padding: 25px 20px 20px 30px;
+	}
+
+	.sp-thumbnails-containerm,
+	.shedule-nav{
+
+		@media only screen and (max-width : 520px) {
+				display: none;
+		}
+	}
 }
 
 .shedule{
@@ -1109,8 +1171,16 @@
 		min-height: 400px;
 	}
 
+	&__time{
+		font-size: 36px;
+		font-weight: 500;
+		line-height: 1.11;
+		color: #230cea;
+		display: none;
+		margin: 0 0 20px;
+	}
+
 	&__title{
-		font-family: $popp;
 		font-size: 36px;
 		font-weight: 600;
 		color: #023753;
@@ -1118,7 +1188,6 @@
 	}
 
 	&__name{
-		font-family: $popp;
 		font-size: 16px;
 		font-weight: 600;
 		line-height: 1.25;
@@ -1127,7 +1196,6 @@
 	}
 
 	&__company{
-		font-family: $popp;
 		font-size: 16px;
 		line-height: 1.25;
 		color: #999999;
@@ -1135,11 +1203,40 @@
 	}
 
 	&__desc{
-		font-family: $popp;
 		font-size: 16px;
 		line-height: 1.88;
 		color: #023753;
 		margin: 10px 0 16px;
+	}
+
+	@media only screen and (max-width : 768px) {
+
+		&__time{
+			display: block;
+		}
+
+		&__title{
+			font-size: 20px;
+			line-height: 1.2;
+			margin: 0 0 10px;
+		}
+
+		&__name{
+			font-size: 14px;
+			line-height: 1.43;
+			margin: 5px 0;
+		}
+
+		&__company{
+			font-size: 10px;
+			line-height: 1.5;
+			margin: 5px 0;
+		}
+
+		&__desc{
+			font-size: 14px;
+			line-height: 1.79;
+		}
 	}
 }
 
@@ -1147,19 +1244,19 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	font-family: $popp;
 
 	&__item{
-		margin: 2px 0 20px 0;
+		margin: auto 0;
 		cursor: pointer;
 		color: #999;
 		display: block;
+
 
 		&:hover{
 			color: #023753;
 		}
 
-		&.active{
+		&.sp-selected-thumbnail{
 			color: #230cea;
 
 			.shedule-nav__time{
@@ -1180,6 +1277,7 @@
 		font-weight: 500;
 		line-height: 1.25;
 		margin: 0 0 10px;
+		transition: all 0.1s;
 	}
 
 	&__title{
@@ -1187,6 +1285,7 @@
 		font-weight: 500;
 		line-height: 1.43;
 		margin: 10px 0 0;
+		transition: all 0.1s;
 	}
 }
 
@@ -1198,7 +1297,6 @@
 }
 
 .tag{
-	font-family: $popp;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.67;
@@ -1360,6 +1458,17 @@
 		margin: 4px 0 28px;
 	}
 
+	.socials{
+		&__link{
+
+			&:hover{
+				.socials__img{
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+
 	@media only screen and (max-width : 768px) {
 		min-height: 320px;
 		padding: 18px 20px;
@@ -1388,6 +1497,12 @@
 			&__link{
 				padding: 0 0 0 10px;
 				text-align: left;
+
+				&:hover{
+					.socials__img{
+						transform: scale(1.2);
+					}
+				}
 			}
 		}
 	}
@@ -1419,6 +1534,15 @@
 		line-height: 2;
 		color: #ffffff;
 		margin: 0;
+
+		a{
+			color: #ffffff;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
 	}
 
 	&__content{

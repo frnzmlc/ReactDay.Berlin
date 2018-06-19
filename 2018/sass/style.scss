@@ -28,6 +28,10 @@ body {
 a {
 	color: #0680ba;
 	transition: all linear .2s;
+
+	&:hover{
+		text-decoration: none;
+	}
 }
 
 .clearfix:after {
@@ -73,6 +77,8 @@ h6 {
 	/*font-family: $font-base;*/
 }
 
+
+@import "vendor/slider-pro.min";
 
 @import "partials/fonts";
 @import "partials/icons";

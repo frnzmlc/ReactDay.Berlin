@@ -186,6 +186,14 @@
 				overflow-y: auto;
 			}
 
+			.menu-toggle__img{
+				display: none;
+
+				&.close{
+					display: block;
+				}
+			}
+
 			.main-menu{
 				display: block;
 
@@ -252,6 +260,10 @@
 		height: 22px;
 		fill: #fff;
 		margin: auto;
+
+		&.close{
+			display: none;
+		}
 	}
 
 	@media only screen and (max-width : 768px) {

@@ -36,4 +36,28 @@
 		outline: none;
 		cursor: pointer;
 	}
+
+	@media only screen and (max-width : 768px) {
+		height: auto;
+		margin-top: 50px;
+		
+		&__input{
+			border: none;
+			border-bottom: 1px solid #b5b5b5;
+			text-align: center;
+			padding: 0 20px;
+			height: 40px;
+		}
+
+		&__submit{
+			font-size: 14px;
+			position: relative;
+			height: 50px;
+			width: 200px;
+			margin: 20px auto 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
 }

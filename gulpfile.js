@@ -95,7 +95,7 @@ gulp.task('sprite', function () {
 					bust: false,
 					render: {
 						scss: {
-							dest: "../../../sass/partials/_sprite-svg-inline.scss",
+							dest: "../../sass/partials/_sprite-svg-inline.scss",
 							template: "sass/tpl/_sprite-tpl-inline.scss"
 						}
 					}
@@ -115,7 +115,7 @@ gulp.task('sprite', function () {
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: ""
+			baseDir: "."
 		},
 		notify: false
 	});

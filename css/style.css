@@ -2755,8 +2755,12 @@ a.sp-video:after {
   justify-content: space-between;
   margin: 4px 0 0; }
   .sponsors-list__link {
+    display: flex;
     margin: 14px 0 0;
-    transition: all ease 0.1s; }
+    transition: all ease 0.1s;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center; }
     .sponsors-list__link:hover {
       transform: scale(0.9); }
   @media only screen and (max-width: 1024px) {

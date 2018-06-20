@@ -1631,8 +1631,12 @@
 	margin: 4px 0 0;
 
 	&__link{
+		display: flex;
 		margin: 14px 0 0;
 		transition: all ease 0.1s;
+		padding: 10px 15px;
+		align-items: center;
+		justify-content: center;
 
 		&:hover{
 			transform: scale(0.9);

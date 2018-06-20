@@ -33,7 +33,7 @@ $(function() {
 
 	// Burger menu
 
-	$('.menu-toggle').click(function(){
+	$('.menu-toggle, .main-menu__link').click(function(){
 		$(this).closest('.header').toggleClass('open');
 	});
 
@@ -101,7 +101,7 @@ $(function() {
 			slider.destroy()
 		}
 		else {
-			slider.init()
+			// slider.init()
 		}
 	});
 

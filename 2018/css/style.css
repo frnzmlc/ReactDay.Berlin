@@ -1922,7 +1922,7 @@ a.sp-video:after {
       .intro__right {
         padding: 0 0 10px; }
       .intro__desc {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.5;
         margin: 0 0 14px; }
       .intro__title {
@@ -1934,7 +1934,7 @@ a.sp-video:after {
         font-weight: 600;
         margin: 0 0 6px; }
       .intro__location {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.5;
         margin: 0 0 19px; }
       .intro__btn-wrap {
@@ -2096,9 +2096,9 @@ a.sp-video:after {
         min-height: 48px; }
       .event__slogan {
         opacity: 0.6;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 2;
-        max-width: 145px;
+        max-width: 170px;
         margin: -22px 0 10px; }
         .event__slogan br {
           display: none; }
@@ -2111,7 +2111,7 @@ a.sp-video:after {
       .event__pic {
         display: none; }
       .event__desc {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 2;
         background: #fff;
         padding: 20px 20px 30px;
@@ -2334,7 +2334,7 @@ a.sp-video:after {
         line-height: 1.2;
         margin: 9px 0 6px; }
       .speakers-list__company {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.5; }
       .speakers-list__right {
         flex: 1 1; }
@@ -2480,7 +2480,7 @@ a.sp-video:after {
       line-height: 1.43;
       margin: 5px 0; }
     .shedule__company {
-      font-size: 10px;
+      font-size: 12px;
       line-height: 1.5;
       margin: 5px 0; }
     .shedule__desc {
@@ -2551,7 +2551,7 @@ a.sp-video:after {
   @media only screen and (max-width: 768px) {
     .tag {
       height: 16px;
-      font-size: 10px;
+      font-size: 12px;
       padding: 0 6px; } }
 
 .location {

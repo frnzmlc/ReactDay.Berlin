@@ -2816,7 +2816,7 @@ a.sp-video:after {
 
 .twitts-list {
   position: relative;
-  columns: 3;
+  column-count: 3;
   column-gap: 30px;
   z-index: 1;
   /*&__col{
@@ -2837,6 +2837,8 @@ a.sp-video:after {
 			top: 100px;
 		}
 	}*/ }
+  .twitts-list .twitter-tweet {
+    transform: none !important; }
   .twitts-list__item {
     width: 100%;
     max-width: 350px;

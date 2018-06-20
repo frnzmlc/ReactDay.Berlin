@@ -1733,9 +1733,13 @@
 
 .twitts-list{
 	position: relative;
-	columns: 3;
+	column-count: 3;
 	column-gap: 30px;
 	z-index: 1;
+
+	.twitter-tweet{
+		transform: none !important;
+	}
 
 	/*&__col{
 		width: 100%;

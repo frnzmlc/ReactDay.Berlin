@@ -425,7 +425,7 @@ html {
   font-family: "Poppins", sans-serif; }
 
 body {
-  background: #fff;
+  background: #230cea;
   color: #515151;
   font-size: 16px;
   line-height: 1.36; }
@@ -2888,6 +2888,12 @@ a.sp-video:after {
     display: none; } }
 
 @media only screen and (min-width: 768px) {
+  .pace-running .wrapper {
+    opacity: 0; } }
+
+@media only screen and (min-width: 768px) {
+  .pace-done .wrapper {
+    opacity: 1; }
   .pace-done .bg-hand {
     will-change: transform;
     animation-duration: 2.5s;

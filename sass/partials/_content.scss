@@ -1823,9 +1823,22 @@
 	}
 }
 
+.pace-running{
+
+	@media only screen and (min-width : 768px) {
+		.wrapper{
+			opacity: 0;
+		}
+	}
+}
+
 .pace-done{
 
 	@media only screen and (min-width : 768px) {
+
+		.wrapper{
+			opacity: 1;
+		}
 
 		.bg-hand{
 			will-change: transform;

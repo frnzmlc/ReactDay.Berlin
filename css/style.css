@@ -1312,6 +1312,7 @@ a.sp-video:after {
             fill: #fff; }
         .header.open .main-nav {
           position: absolute;
+          display: block;
           top: 90px;
           left: 0;
           right: 0;
@@ -1380,7 +1381,7 @@ a.sp-video:after {
 
 .logo {
   height: 63px;
-  width: 180px;
+  width: 212px;
   margin: 20px 0 0; }
   .logo__link {
     display: block;
@@ -1592,15 +1593,16 @@ a.sp-video:after {
   position: absolute;
   left: 50%;
   top: 36px;
-  transform: translateX(-50%);
-  /*@media only screen and (max-width : 1280px) {
-		display: flex;
-		position: relative;
-		left: auto;
-		top: -5px;
-		transform: translate(0);
-		margin: auto;
-	}*/ }
+  transform: translateX(-50%); }
+  @media only screen and (max-width: 1024px) {
+    .main-nav {
+      position: relative;
+      left: 0;
+      top: 0;
+      display: flex;
+      padding: 11px 0 0;
+      align-items: center;
+      transform: translate(0, 0); } }
 
 .main-menu {
   padding: 0;
@@ -1620,7 +1622,12 @@ a.sp-video:after {
     position: relative;
     margin: 0 8px;
     line-height: 1.43; }
+    .main-menu__item.active .main-menu__link {
+      color: #230cea; }
     .main-menu__item.active:after {
+      opacity: 1;
+      background: #230cea; }
+    .main-menu__item:after {
       position: absolute;
       content: '';
       left: 10px;
@@ -1628,9 +1635,8 @@ a.sp-video:after {
       right: 10px;
       height: 2px;
       background: #023753;
-      transition: all linear 0.1s; }
-    .main-menu__item.active .main-menu__link {
-      color: #023753; }
+      transition: all linear 0.1s;
+      opacity: 0; }
   .main-menu__link {
     display: block;
     padding: 10px;
@@ -1649,7 +1655,7 @@ a.sp-video:after {
       margin: 0 5px; }
     .main-menu__link {
       padding: 10px 5px; } }
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 768px) {
     .main-menu {
       display: none; } }
 
@@ -1733,6 +1739,14 @@ a.sp-video:after {
         background: rgba(255, 255, 255, 0.1); }
     .intro__head .socials__link:after {
       background: transparent; }
+    .intro__head .main-menu__item.active__link {
+      color: #fff; }
+    .intro__head .main-menu__item:hover:after {
+      opacity: 1; }
+    .intro__head .main-menu__item:after {
+      background: #fff; }
+    .intro__head .main-menu__link {
+      color: #fff; }
     @media only screen and (max-width: 768px) {
       .intro__head {
         height: 80px; }

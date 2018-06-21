@@ -1816,11 +1816,19 @@
 	}
 }
 
+
+.pace{
+	@media only screen and (max-width : 768px) {
+		display: none;
+	}
+}
+
 .pace-done{
 
 	@media only screen and (min-width : 768px) {
 
 		.bg-hand{
+			will-change: transform;
 			animation-duration: 2.5s;
 			animation-name: hand-slidein;
 
@@ -1838,6 +1846,7 @@
 		.intro{
 
 			&__info{
+				will-change: transform;
 				animation-duration: 2s;
 				animation-name: left-slidein;
 
@@ -1860,6 +1869,7 @@
 			}
 
 			&__buildings{
+				will-change: transform;
 				animation-duration: 2.3s;
 				animation-name: buildings-slidein;
 
@@ -1875,6 +1885,7 @@
 			}
 
 			.bg-back{
+				will-change: transform;
 				animation-duration: 2s;
 				animation-name: bg-back-slidein;
 
@@ -1890,6 +1901,7 @@
 			}
 
 			.bg-moon-back{
+				will-change: transform;
 				animation-duration: 4s;
 				animation-name: bg-moon-back-slidein;
 
@@ -1915,6 +1927,7 @@
 			}
 
 			.bg-moon{
+				will-change: transform;
 				animation-duration: 3s;
 				animation-name: bg-moon-slidein;
 
@@ -1941,6 +1954,7 @@
 			}
 
 			.conf-stats{
+				will-change: transform;
 				animation-duration: 3.5s;
 				animation-name: conf-stats-slidein;
 
@@ -1963,6 +1977,7 @@
 			}
 
 			&__loc{
+				will-change: transform;
 				animation-duration: 3s;
 				animation-name: loc-slidein;
 
@@ -1982,6 +1997,7 @@
 			}
 
 			&__btn-wrap{
+				will-change: transform;
 				animation-duration: 4s;
 				animation-name: btn-wrap-slidein;
 
@@ -2001,6 +2017,7 @@
 			}
 
 			&__head{
+				will-change: transform;
 				animation-duration: 4.5s;
 				animation-name: head-slidein;
 
@@ -2021,10 +2038,8 @@
 		}
 	}
 
-	/*@media only screen and (max-width : 768px) {
-		.bg-hand{
-
-
+	@media only screen and (max-width : 768px) {
+		/*.bg-hand{
 
 			animation-duration: 2.5s;
 			animation-name: hand-slidein;
@@ -2038,6 +2053,6 @@
 					transform: translate(0, 0);
 				}
 			}
-		}
-	}*/
+		}*/
+	}
 }

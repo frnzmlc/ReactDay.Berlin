@@ -2883,11 +2883,134 @@ a.sp-video:after {
       column-gap: 20px;
       columns: 1; } }
 
-.pace-done {
-  /*@media only screen and (max-width : 768px) {
-		.bg-hand{
+@media only screen and (max-width: 768px) {
+  .pace {
+    display: none; } }
 
+@media only screen and (min-width: 768px) {
+  .pace-done .bg-hand {
+    will-change: transform;
+    animation-duration: 2.5s;
+    animation-name: hand-slidein; }
+  @keyframes hand-slidein {
+    from {
+      transform: translate(-43%, 100px); }
+    to {
+      transform: translate(-43%, 0); } }
+  .pace-done .intro__info {
+    will-change: transform;
+    animation-duration: 2s;
+    animation-name: left-slidein; }
+  @keyframes left-slidein {
+    0% {
+      transform: translate(-100px, 50px);
+      opacity: 0; }
+    50% {
+      transform: translate(-100px, 50px);
+      opacity: 0; }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1; } }
+  .pace-done .intro__buildings {
+    will-change: transform;
+    animation-duration: 2.3s;
+    animation-name: buildings-slidein; }
+  @keyframes buildings-slidein {
+    from {
+      transform: translate(-50%, 0) scale(1.3); }
+    to {
+      transform: translate(-50%, 0) scale(1); } }
+  .pace-done .intro .bg-back {
+    will-change: transform;
+    animation-duration: 2s;
+    animation-name: bg-back-slidein; }
+  @keyframes bg-back-slidein {
+    from {
+      transform: translate(-50%, 0) scale(1.2); }
+    to {
+      transform: translate(-50%, 0) scale(1); } }
+  .pace-done .intro .bg-moon-back {
+    will-change: transform;
+    animation-duration: 4s;
+    animation-name: bg-moon-back-slidein; }
+  @keyframes bg-moon-back-slidein {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2); }
+    25% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2) rotate(-160deg); }
+    50% {
+      opacity: 1; }
+    100% {
+      transform: translate(-50%, -50%) scale(1) rotate(0); } }
+  .pace-done .intro .bg-moon {
+    will-change: transform;
+    animation-duration: 3s;
+    animation-name: bg-moon-slidein; }
+  @keyframes bg-moon-slidein {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5) rotate(-160deg); }
+    25% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5) rotate(-160deg); }
+    50% {
+      opacity: 1; }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1) rotate(0); } }
+  .pace-done .intro .conf-stats {
+    will-change: transform;
+    animation-duration: 3.5s;
+    animation-name: conf-stats-slidein; }
+  @keyframes conf-stats-slidein {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); }
+    75% {
+      opacity: 0;
+      transform: translateX(100px); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } }
+  .pace-done .intro__loc {
+    will-change: transform;
+    animation-duration: 3s;
+    animation-name: loc-slidein; }
+  @keyframes loc-slidein {
+    0% {
+      opacity: 0; }
+    60% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .pace-done .intro__btn-wrap {
+    will-change: transform;
+    animation-duration: 4s;
+    animation-name: btn-wrap-slidein; }
+  @keyframes btn-wrap-slidein {
+    0% {
+      opacity: 0; }
+    80% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  .pace-done .intro__head {
+    will-change: transform;
+    animation-duration: 4.5s;
+    animation-name: head-slidein; }
+  @keyframes head-slidein {
+    0% {
+      opacity: 0; }
+    85% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } } }
 
+@media only screen and (max-width: 768px) {
+  .pace-done {
+    /*.bg-hand{
 
 			animation-duration: 2.5s;
 			animation-name: hand-slidein;
@@ -2901,118 +3024,7 @@ a.sp-video:after {
 					transform: translate(0, 0);
 				}
 			}
-		}
-	}*/ }
-  @media only screen and (min-width: 768px) {
-    .pace-done .bg-hand {
-      animation-duration: 2.5s;
-      animation-name: hand-slidein; }
-    @keyframes hand-slidein {
-      from {
-        transform: translate(-43%, 100px); }
-      to {
-        transform: translate(-43%, 0); } }
-    .pace-done .intro__info {
-      animation-duration: 2s;
-      animation-name: left-slidein; }
-    @keyframes left-slidein {
-      0% {
-        transform: translate(-100px, 50px);
-        opacity: 0; }
-      50% {
-        transform: translate(-100px, 50px);
-        opacity: 0; }
-      100% {
-        transform: translate(0, 0);
-        opacity: 1; } }
-    .pace-done .intro__buildings {
-      animation-duration: 2.3s;
-      animation-name: buildings-slidein; }
-    @keyframes buildings-slidein {
-      from {
-        transform: translate(-50%, 0) scale(1.3); }
-      to {
-        transform: translate(-50%, 0) scale(1); } }
-    .pace-done .intro .bg-back {
-      animation-duration: 2s;
-      animation-name: bg-back-slidein; }
-    @keyframes bg-back-slidein {
-      from {
-        transform: translate(-50%, 0) scale(1.2); }
-      to {
-        transform: translate(-50%, 0) scale(1); } }
-    .pace-done .intro .bg-moon-back {
-      animation-duration: 4s;
-      animation-name: bg-moon-back-slidein; }
-    @keyframes bg-moon-back-slidein {
-      0% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(2); }
-      25% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(2) rotate(-160deg); }
-      50% {
-        opacity: 1; }
-      100% {
-        transform: translate(-50%, -50%) scale(1) rotate(0); } }
-    .pace-done .intro .bg-moon {
-      animation-duration: 3s;
-      animation-name: bg-moon-slidein; }
-    @keyframes bg-moon-slidein {
-      0% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1.5) rotate(-160deg); }
-      25% {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1.5) rotate(-160deg); }
-      50% {
-        opacity: 1; }
-      100% {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1) rotate(0); } }
-    .pace-done .intro .conf-stats {
-      animation-duration: 3.5s;
-      animation-name: conf-stats-slidein; }
-    @keyframes conf-stats-slidein {
-      0% {
-        opacity: 0;
-        transform: translateX(100px); }
-      75% {
-        opacity: 0;
-        transform: translateX(100px); }
-      100% {
-        opacity: 1;
-        transform: translateX(0); } }
-    .pace-done .intro__loc {
-      animation-duration: 3s;
-      animation-name: loc-slidein; }
-    @keyframes loc-slidein {
-      0% {
-        opacity: 0; }
-      60% {
-        opacity: 0; }
-      100% {
-        opacity: 1; } }
-    .pace-done .intro__btn-wrap {
-      animation-duration: 4s;
-      animation-name: btn-wrap-slidein; }
-    @keyframes btn-wrap-slidein {
-      0% {
-        opacity: 0; }
-      80% {
-        opacity: 0; }
-      100% {
-        opacity: 1; } }
-    .pace-done .intro__head {
-      animation-duration: 4.5s;
-      animation-name: head-slidein; }
-    @keyframes head-slidein {
-      0% {
-        opacity: 0; }
-      85% {
-        opacity: 0; }
-      100% {
-        opacity: 1; } } }
+		}*/ } }
 
 /* Footer
 -----------------------------------------------------------------------------*/

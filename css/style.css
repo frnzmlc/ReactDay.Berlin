@@ -457,6 +457,9 @@ a {
   overflow: hidden;
   min-height: 100%;
   min-width: 300px; }
+  @media only screen and (min-width: 768px) {
+    .wrapper {
+      opacity: 0; } }
 
 .container {
   max-width: 960px;
@@ -2819,12 +2822,12 @@ a.sp-video:after {
   .past__intro {
     background-color: #230cea;
     width: 1200px;
-    height: 320px;
+    height: 280px;
     top: -87px;
-    left: 50%;
+    left: 55%;
     position: absolute; }
     .past__intro iframe {
-      height: 320px; }
+      height: 280px; }
   .past__box-1 {
     position: absolute;
     top: 135px;
@@ -2956,8 +2959,10 @@ a.sp-video:after {
     display: none; } }
 
 @media only screen and (min-width: 768px) {
-  .pace-running .wrapper {
-    opacity: 0; } }
+  .pace-running {
+    /*.wrapper{
+			opacity: 0;
+		}*/ } }
 
 @media only screen and (min-width: 768px) {
   .pace-done .wrapper {

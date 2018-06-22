@@ -1734,13 +1734,13 @@
 	&__intro{
 		background-color: #230cea;
 		width: 1200px;
-		height: 320px;
+		height: 280px;
 		top: -87px;
-		left: 50%;
+		left: 55%;
 		position: absolute;
 
 		iframe{
-			height: 320px;
+			height: 280px;
 		}
 	}
 
@@ -1920,9 +1920,9 @@
 .pace-running{
 
 	@media only screen and (min-width : 768px) {
-		.wrapper{
+		/*.wrapper{
 			opacity: 0;
-		}
+		}*/
 	}
 }
 

@@ -4,11 +4,27 @@
 .footer {
 	background: #230cea;
 	min-height: 280px;
-	margin: 100px 0 0;
+	margin: 0;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 20px;
+		background: #fff;
+	}
+
+	@media only screen and (max-width : 680px) {
+		&:after{
+			height: 2px;
+		}
+	}
 
 	.container{
 		max-width: 1160px;
-		padding: 10px;
+		padding: 10px 20px;
 	}
 
 	.socials{
@@ -79,9 +95,21 @@
 
 .f-bg-1{
 	position: absolute;
-	height: 20px;
-	background: #fff;
-	left: 0;
-	bottom: 0;
-	right: 0;
+
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -1px;
+	width: 1440px;
+	height: 382px;
+	background: url(../img/f-bg.svg) center bottom no-repeat;
+
+	@media only screen and (max-width : 980px) {
+		left: auto;
+		right: -634px;
+		transform: translateX(0);
+	}
+
+	@media only screen and (max-width : 680px) {
+		display: none;
+	}
 }

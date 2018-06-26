@@ -3124,7 +3124,7 @@ a.sp-video:after {
     .footer:after {
       height: 2px; } }
   .footer .container {
-    max-width: 1160px;
+    max-width: 1180px;
     padding: 10px 20px; }
   .footer .socials__item:hover .socials__img {
     fill: #fff; }
@@ -3148,7 +3148,7 @@ a.sp-video:after {
 
 .f-menu {
   padding: 0;
-  margin: 40px 0;
+  margin: 40px 0 34px;
   list-style: none;
   font-size: 14px;
   font-weight: 500;
@@ -3161,6 +3161,23 @@ a.sp-video:after {
     color: #fff; }
     .f-menu__link:hover {
       text-decoration: underline; }
+
+.f-logo {
+  height: 41px;
+  width: 156px;
+  margin: 24px 0 0; }
+  .f-logo__link {
+    display: block;
+    height: 100%;
+    background: url(../img/logo-gitnation.svg) no-repeat;
+    transition: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.88;
+    color: #023753;
+    text-decoration: none;
+    white-space: nowrap; }
 
 .f-bg-1 {
   position: absolute;

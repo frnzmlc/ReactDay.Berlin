@@ -2013,14 +2013,15 @@ a.sp-video:after {
         .intro .conf-stats__num {
           font-size: 14px;
           width: 50px; }
-      .intro .bg-back,
-      .intro .bg-building_1,
-      .intro .bg-building_2,
-      .intro .bg-building_3,
-      .intro .bg-building_4,
-      .intro .bg-building_5,
-      .intro .bg-building_6 {
+      .intro .bg-back {
+        height: 400px; }
+      .intro .bg-moon,
+      .intro .bg-moon-back, .intro__buildings {
         display: none; } }
+  @media only screen and (max-width: 500px) {
+    .intro .bg-back {
+      bottom: 148px;
+      height: 220px; } }
 
 .conf-stats {
   position: relative;

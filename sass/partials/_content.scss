@@ -520,15 +520,23 @@
 				width: 50px;
 			}
 		}
-		
-		.bg-back,
-		.bg-building_1,
-		.bg-building_2,
-		.bg-building_3,
-		.bg-building_4,
-		.bg-building_5,
-		.bg-building_6{
+
+		.bg-back{
+			height: 400px;
+		}
+
+		.bg-moon,
+		.bg-moon-back,
+		&__buildings{
 			display: none;
+		}
+	}
+
+	@media only screen and (max-width : 500px) {
+
+		.bg-back{
+			bottom: 148px;
+			height: 220px;
 		}
 	}
 }

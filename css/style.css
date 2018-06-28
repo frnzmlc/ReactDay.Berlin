@@ -1266,13 +1266,21 @@ a.sp-video:after {
         height: 1px;
         background: #1661ee; }
       .header.sticky {
+        min-height: 60px;
+        height: 60px;
         background: #f6f7f9; }
-        .header.sticky .logo__link {
-          background: url(../img/logo_b.svg) 0 0 no-repeat;
-          background-size: 40px 42px;
-          font-size: 0;
-          padding: 10px 0 0 80px;
-          font-size: 14px; }
+        .header.sticky .container {
+          min-height: 60px; }
+        .header.sticky .logo {
+          margin: 8px 0 0 10px; }
+          .header.sticky .logo__link {
+            background: url(../img/logo_b.svg) 0 0 no-repeat;
+            background-size: 40px 42px;
+            font-size: 0;
+            padding: 10px 0 0 80px;
+            font-size: 14px; }
+        .header.sticky .menu-toggle {
+          top: 10px; }
         .header.sticky:after {
           display: none; }
         .header.sticky.open .menu-toggle__img {

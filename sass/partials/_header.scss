@@ -80,9 +80,16 @@
 
 
 		&.sticky{
+			min-height: 60px;
+			height: 60px;
 			background: #f6f7f9;
 
+			.container{
+				min-height: 60px;
+			}
+
 			.logo{
+				margin: 8px 0 0 10px;
 
 				&__link{
 					background: url(../img/logo_b.svg) 0 0 no-repeat;
@@ -93,11 +100,16 @@
 				}
 			}
 
+			.menu-toggle{
+				top: 10px;
+			}
+
 			&:after{
 				display: none;
 			}
 
 			&.open{
+
 				.menu-toggle__img{
 					fill: #fff;
 				}

@@ -1164,7 +1164,8 @@ a.sp-video:after {
     padding: 0 180px 0 20px;
     height: 60px;
     background: #ffffff;
-    border: solid 1px #d7d7d7; }
+    border: solid 1px #d7d7d7;
+    -webkit-appearance: none; }
   .subscribe-form__submit {
     display: block;
     font-family: "Poppins", sans-serif;
@@ -2096,7 +2097,7 @@ a.sp-video:after {
     background: #230cea;
     left: 50%;
     transform: translateX(-1175px);
-    top: 140px;
+    top: 100px;
     z-index: 1; }
   .event__box-2 {
     position: absolute;
@@ -2132,7 +2133,7 @@ a.sp-video:after {
       background: url(../img/event-bg_w.svg); }
   .event .container {
     max-width: 1170px;
-    padding: 140px 10px 58px 210px; }
+    padding: 100px 10px 58px 210px; }
   @media only screen and (max-width: 1024px) {
     .event__box-1 {
       transform: translateX(-1280px); }

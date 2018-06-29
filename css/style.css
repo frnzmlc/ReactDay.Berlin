@@ -2247,7 +2247,9 @@ a.sp-video:after {
     padding: 30px 10px 30px 10px; }
   .speakers__box-1 {
     transform: translate(-6.5%);
-    height: 210px; } }
+    height: 210px; }
+  .speakers__box-2 {
+    display: none; } }
 
 .speakers-list {
   position: relative;
@@ -2895,6 +2897,8 @@ a.sp-video:after {
 	}*/ }
   .twitts-list .twitter-tweet {
     transform: none !important; }
+  .twitts-list .EmbeddedTweet {
+    border: none !important; }
   .twitts-list__item {
     width: 100%;
     max-width: 350px;

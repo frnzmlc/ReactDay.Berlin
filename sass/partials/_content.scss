@@ -836,7 +836,10 @@
 		&__box-1{
 			transform: translate(-6.5%);
 			height: 210px;
+		}
 
+		&__box-2{
+			display: none;
 		}
 	}
 }
@@ -1810,6 +1813,10 @@
 
 	.twitter-tweet{
 		transform: none !important;
+	}
+
+	.EmbeddedTweet{
+		border: none !important;
 	}
 
 	/*&__col{

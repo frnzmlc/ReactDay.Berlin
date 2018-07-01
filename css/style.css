@@ -1900,6 +1900,25 @@ a.sp-video:after {
     bottom: 0;
     left: 50%;
     transform: translate(-43%, 0); }
+    .intro .bg-hand__hand {
+      width: 100%;
+      height: 100%; }
+    .intro .bg-hand__lightning {
+      position: absolute;
+      left: 50%;
+      height: 134px;
+      transform: translateX(-48%);
+      top: 5px;
+      width: 77%;
+      fill: #fff; }
+    .intro .bg-hand__react {
+      position: absolute;
+      fill: #fff;
+      width: 99px;
+      height: 88px;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%); }
   .intro__date {
     font-size: 28px;
     font-weight: 600;
@@ -1958,6 +1977,14 @@ a.sp-video:after {
   @media only screen and (max-width: 1200px) {
     .intro .bg-hand {
       height: 460px; }
+      .intro .bg-hand__lightning {
+        top: 3px;
+        height: 78px;
+        width: 157px; }
+      .intro .bg-hand__react {
+        width: 64px;
+        height: 58px;
+        top: 12px; }
     .intro .container {
       max-width: 780px; } }
   @media only screen and (max-width: 768px) {
@@ -2010,6 +2037,14 @@ a.sp-video:after {
         left: 10px;
         bottom: 122px;
         transform: translateX(0); }
+        .intro .bg-hand__lightning {
+          height: 17.5%;
+          width: 76%;
+          top: 3%; }
+        .intro .bg-hand__react {
+          width: 50px;
+          height: 44px;
+          top: 21px; }
       .intro .conf-stats {
         width: 100%;
         padding: 42px 20px 20px 40px;
@@ -2986,11 +3021,52 @@ a.sp-video:after {
     will-change: transform;
     animation-duration: 2.5s;
     animation-name: hand-slidein; }
+    .pace-done .bg-hand__lightning {
+      will-change: transform;
+      animation-duration: 5s;
+      animation-name: lightning-slidein; }
+    .pace-done .bg-hand__react {
+      will-change: transform;
+      animation-duration: 5s;
+      animation-name: react-slidein;
+      perspective: 800px; }
   @keyframes hand-slidein {
     from {
       transform: translate(-43%, 100px); }
     to {
       transform: translate(-43%, 0); } }
+  @keyframes lightning-slidein {
+    0% {
+      opacity: 0; }
+    90% {
+      opacity: 0; }
+    /*96% {
+					opacity: 1;
+				}
+
+				97% {
+					opacity: 0;
+				}
+
+				98% {
+					opacity: 1;
+				}
+
+				99% {
+					opacity: 0;
+				}*/
+    100% {
+      opacity: 1; } }
+  @keyframes react-slidein {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg); }
+    80% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg); }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1) rotateX(0) rotateZ(0); } }
   .pace-done .intro__info {
     will-change: transform;
     animation-duration: 2s;

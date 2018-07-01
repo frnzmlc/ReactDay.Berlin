@@ -328,6 +328,31 @@
 		bottom: 0;
 		left: 50%;
 		transform: translate(-43%, 0);
+
+		&__hand{
+			width: 100%;
+			height: 100%;
+		}
+
+		&__lightning{
+			position: absolute;
+			left: 50%;
+			height: 134px;
+			transform: translateX(-48%);
+			top: 5px;
+			width: 77%;
+			fill: #fff;
+		}
+
+		&__react{
+			position: absolute;
+			fill: #fff;
+			width: 99px;
+			height: 88px;
+			top: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 
 	&__date{
@@ -416,6 +441,18 @@
 		
 		.bg-hand{
 			height: 460px;
+
+			&__lightning{
+				top: 3px;
+				height: 78px;
+				width: 157px;
+			}
+
+			&__react{
+				width: 64px;
+				height: 58px;
+				top: 12px;
+			}
 		}
 
 		.container{
@@ -501,6 +538,18 @@
 			left: 10px;
 			bottom: 122px;
 			transform: translateX(0);
+
+			&__lightning{
+				height: 17.5%;
+				width: 76%;
+				top: 3%;
+			}
+
+			&__react{
+				width: 50px;
+				height: 44px;
+				top: 21px;
+			}
 		}
 
 		.conf-stats{
@@ -1955,6 +2004,19 @@
 			animation-duration: 2.5s;
 			animation-name: hand-slidein;
 
+			&__lightning{
+				will-change: transform;
+				animation-duration: 5s;
+				animation-name: lightning-slidein;
+			}
+
+			&__react{
+				will-change: transform;
+				animation-duration: 5s;
+				animation-name: react-slidein;
+				perspective: 800px;
+			}
+
 			@keyframes hand-slidein {
 				from {
 					transform: translate(-43%, 100px);
@@ -1962,6 +2024,53 @@
 
 				to {
 					transform: translate(-43%, 0);
+				}
+			}
+
+			@keyframes lightning-slidein {
+				0% {
+					opacity: 0;
+				}
+
+				90% {
+					opacity: 0;
+				}
+
+				/*96% {
+					opacity: 1;
+				}
+
+				97% {
+					opacity: 0;
+				}
+
+				98% {
+					opacity: 1;
+				}
+
+				99% {
+					opacity: 0;
+				}*/
+
+				100% {
+					opacity: 1;
+				}
+			}
+
+			@keyframes react-slidein {
+				0% {
+					opacity: 0;
+					transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg);
+				}
+
+				80% {
+					opacity: 0;
+					transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg);
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(-50%) scale(1) rotateX(0) rotateZ(0);
 				}
 			}
 		}

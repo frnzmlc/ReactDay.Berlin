@@ -1758,7 +1758,7 @@
 		justify-content: center;
 
 		&:hover{
-			transform: scale(0.9);
+			opacity: 0.8;
 		}
 	}
 
@@ -2006,13 +2006,13 @@
 
 			&__lightning{
 				will-change: transform;
-				animation-duration: 5s;
+				animation-duration: 3s;
 				animation-name: lightning-slidein;
 			}
 
 			&__react{
 				will-change: transform;
-				animation-duration: 5s;
+				animation-duration: 3s;
 				animation-name: react-slidein;
 				perspective: 800px;
 			}
@@ -2032,25 +2032,9 @@
 					opacity: 0;
 				}
 
-				90% {
+				80% {
 					opacity: 0;
 				}
-
-				/*96% {
-					opacity: 1;
-				}
-
-				97% {
-					opacity: 0;
-				}
-
-				98% {
-					opacity: 1;
-				}
-
-				99% {
-					opacity: 0;
-				}*/
 
 				100% {
 					opacity: 1;
@@ -2063,7 +2047,7 @@
 					transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg);
 				}
 
-				80% {
+				70% {
 					opacity: 0;
 					transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg);
 				}
@@ -2075,7 +2059,7 @@
 			}
 		}
 
-		.intro{
+		/*.intro{
 
 			&__info{
 				will-change: transform;
@@ -2267,24 +2251,10 @@
 					}
 				}
 			}
-		}
+		}*/
 	}
 
 	@media only screen and (max-width : 768px) {
-		/*.bg-hand{
 
-			animation-duration: 2.5s;
-			animation-name: hand-slidein;
-
-			@keyframes hand-slidein {
-				from {
-					transform: translate(0, 100px);
-				}
-
-				to {
-					transform: translate(0, 0);
-				}
-			}
-		}*/
 	}
 }

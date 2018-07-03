@@ -429,6 +429,9 @@ body {
   color: #515151;
   font-size: 16px;
   line-height: 1.36; }
+  @media only screen and (max-width: 768px) {
+    body.stop-scroll {
+      overflow: hidden; } }
 
 a {
   color: #0680ba;
@@ -456,10 +459,10 @@ a {
   position: relative;
   overflow: hidden;
   min-height: 100%;
-  min-width: 300px;
-  /*@media only screen and (min-width : 768px) {
-		opacity: 0;
-	}*/ }
+  min-width: 300px; }
+  @media only screen and (min-width: 768px) {
+    .wrapper {
+      opacity: 0; } }
 
 .container {
   max-width: 960px;
@@ -1292,9 +1295,10 @@ a.sp-video:after {
         display: none; }
       .header.open {
         position: fixed;
+        top: 0;
+        height: auto;
         bottom: 0;
-        background: #240bea;
-        height: 100%; }
+        background: #240bea; }
         .header.open .container {
           height: 100%; }
         .header.open .logo__link {

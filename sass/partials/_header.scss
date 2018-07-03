@@ -126,9 +126,10 @@
 
 		&.open{
 			position: fixed;
+			top: 0;
+			height: auto;
 			bottom: 0;
 			background: #240bea;
-			height: 100%;
 
 			.container{
 				height: 100%;

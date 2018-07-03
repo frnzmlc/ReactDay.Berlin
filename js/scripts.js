@@ -35,6 +35,7 @@ $(function() {
 
 	$('.menu-toggle, .main-menu__link').click(function(){
 		$(this).closest('.header').toggleClass('open');
+		$(this).closest('body').toggleClass('stop-scroll');
 	});
 
 	// Cliping

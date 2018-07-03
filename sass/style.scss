@@ -23,6 +23,12 @@ body {
 	color: #515151;
 	font-size: $font-size;
 	line-height: 1.36;
+
+	@media only screen and (max-width : 768px) {
+		&.stop-scroll{
+			overflow: hidden;
+		}
+	}
 }
 
 a {
@@ -57,9 +63,9 @@ a {
 	min-height: 100%;
 	min-width: 300px;
 
-	/*@media only screen and (min-width : 768px) {
+	@media only screen and (min-width : 768px) {
 		opacity: 0;
-	}*/
+	}
 }
 
 .container {

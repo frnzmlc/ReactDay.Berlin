@@ -462,6 +462,7 @@ a {
   min-width: 300px; }
   @media only screen and (min-width: 768px) {
     .wrapper {
+      transition: opacity 1s;
       opacity: 0; } }
 
 .container {
@@ -3008,15 +3009,17 @@ a.sp-video:after {
         margin: 30px 0 0;
         height: 50px; } }
 
-@media only screen and (max-width: 768px) {
-  .pace {
-    display: none; } }
-
 @media only screen and (min-width: 768px) {
-  .pace-running {
-    /*.wrapper{
-			opacity: 0;
-		}*/ } }
+  .pace .bg-hand {
+    will-change: transform;
+    transform: translate(-43%, 50px); }
+    .pace .bg-hand__lightning {
+      will-change: transform;
+      opacity: 0; }
+    .pace .bg-hand__react {
+      will-change: transform;
+      opacity: 0;
+      transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg); } }
 
 @media only screen and (min-width: 768px) {
   .pace-done {
@@ -3217,20 +3220,20 @@ a.sp-video:after {
       opacity: 1; }
     .pace-done .bg-hand {
       will-change: transform;
-      animation-duration: 2.5s;
+      animation-duration: 1.5s;
       animation-name: hand-slidein; }
       .pace-done .bg-hand__lightning {
         will-change: transform;
-        animation-duration: 3s;
+        animation-duration: 1.8s;
         animation-name: lightning-slidein; }
       .pace-done .bg-hand__react {
         will-change: transform;
-        animation-duration: 3s;
+        animation-duration: 1.6s;
         animation-name: react-slidein;
         perspective: 800px; }
   @keyframes hand-slidein {
     from {
-      transform: translate(-43%, 100px); }
+      transform: translate(-43%, 50px); }
     to {
       transform: translate(-43%, 0); } }
   @keyframes lightning-slidein {

@@ -1975,19 +1975,24 @@
 	}
 }
 
-
 .pace{
-	@media only screen and (max-width : 768px) {
-		display: none;
-	}
-}
-
-.pace-running{
-
 	@media only screen and (min-width : 768px) {
-		/*.wrapper{
-			opacity: 0;
-		}*/
+
+		.bg-hand{
+			will-change: transform;
+			transform: translate(-43%, 50px);
+
+			&__lightning{
+				will-change: transform;
+				opacity: 0;
+			}
+
+			&__react{
+				will-change: transform;
+				opacity: 0;
+				transform: translateX(-50%) scale(0) rotateX(-160deg) rotateZ(-160deg);
+			}
+		}
 	}
 }
 
@@ -2001,25 +2006,25 @@
 
 		.bg-hand{
 			will-change: transform;
-			animation-duration: 2.5s;
+			animation-duration: 1.5s;
 			animation-name: hand-slidein;
 
 			&__lightning{
 				will-change: transform;
-				animation-duration: 3s;
+				animation-duration: 1.8s;
 				animation-name: lightning-slidein;
 			}
 
 			&__react{
 				will-change: transform;
-				animation-duration: 3s;
+				animation-duration: 1.6s;
 				animation-name: react-slidein;
 				perspective: 800px;
 			}
 
 			@keyframes hand-slidein {
 				from {
-					transform: translate(-43%, 100px);
+					transform: translate(-43%, 50px);
 				}
 
 				to {

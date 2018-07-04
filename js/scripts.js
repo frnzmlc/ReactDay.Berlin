@@ -34,10 +34,9 @@ $(function() {
 
 	$('body').addClass('pace');
 
-	$(window).load(function() {
-
+	setTimeout(function(){
 		$('body').removeClass('pace').addClass('pace-done');
-	});
+	}, 800);
 
 	// Burger menu
 

@@ -404,28 +404,43 @@
 
 	}
 
-	@media only screen and (max-height : 700px) {
+	@media only screen and (max-height : 800px) {
 
 		min-height: 650px;
 		
 		.bg-hand{
-			width: 38vh;
-			height: 86vh;
+			/*width: 38vh;
+			height: 86vh;*/
+			width: 240px;
+			height: 546px;
+
+			&__lightning{
+				height: 92px;
+			}
+
+			&__react{
+				height: 80px;
+				top: 9px;
+			}
 		}
 		
 		.bg-moon-back{
-			width: 85vh;
-			height: 85vh;
+			/*width: 85vh;
+			height: 85vh;*/
 		}
 		
-		.bg-moon{
-			width: 85vh;
-			height: 85vh;
+		.bg-moon,
+		.bg-moon-back{
+			/*width: 85vh;
+			height: 85vh;*/
+			width: 500px;
+			height: 500px;
 		}
 		
 		.bg-back{
-			width: 180vh;
-			height: 63.5vh;
+			/*width: 180vh;
+			height: 63.5vh;*/
+			height: 405px;
 		}
 	}
 

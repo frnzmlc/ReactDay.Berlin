@@ -1960,21 +1960,32 @@ a.sp-video:after {
     display: flex;
     justify-content: space-between;
     z-index: 4; }
-  @media only screen and (max-height: 700px) {
+  @media only screen and (max-height: 800px) {
     .intro {
       min-height: 650px; }
       .intro .bg-hand {
-        width: 38vh;
-        height: 86vh; }
+        /*width: 38vh;
+			height: 86vh;*/
+        width: 240px;
+        height: 546px; }
+        .intro .bg-hand__lightning {
+          height: 92px; }
+        .intro .bg-hand__react {
+          height: 80px;
+          top: 9px; }
       .intro .bg-moon-back {
-        width: 85vh;
-        height: 85vh; }
-      .intro .bg-moon {
-        width: 85vh;
-        height: 85vh; }
+        /*width: 85vh;
+			height: 85vh;*/ }
+      .intro .bg-moon,
+      .intro .bg-moon-back {
+        /*width: 85vh;
+			height: 85vh;*/
+        width: 500px;
+        height: 500px; }
       .intro .bg-back {
-        width: 180vh;
-        height: 63.5vh; } }
+        /*width: 180vh;
+			height: 63.5vh;*/
+        height: 405px; } }
   @media only screen and (min-height: 1000px) {
     .intro .bg-hand {
       width: 350px;

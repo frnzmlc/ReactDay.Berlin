@@ -463,7 +463,7 @@ a {
   @media only screen and (min-width: 768px) {
     .wrapper {
       transition: opacity 1s;
-      opacity: 0; } }
+      /*opacity: 0;*/ } }
 
 .container {
   max-width: 960px;
@@ -1904,7 +1904,7 @@ a.sp-video:after {
     z-index: 5;
     bottom: 0;
     left: 50%;
-    transform: translate(-43%, 0); }
+    transform: translate(-43%, 50px); }
     .intro .bg-hand__hand {
       width: 100%;
       height: 100%; }
@@ -1915,7 +1915,8 @@ a.sp-video:after {
       transform: translateX(-48%);
       top: 5px;
       width: 77%;
-      fill: #fff; }
+      fill: #fff;
+      opacity: 0; }
     .intro .bg-hand__react {
       position: absolute;
       fill: #fff;
@@ -1923,7 +1924,8 @@ a.sp-video:after {
       height: 100px;
       top: 18px;
       left: 50%;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      opacity: 0; }
   .intro__date {
     font-size: 28px;
     font-weight: 600;
@@ -2048,19 +2050,23 @@ a.sp-video:after {
         margin: 0 auto;
         max-width: 500px; }
       .intro .bg-hand {
-        width: 52%;
+        width: 50%;
+        width: 150px;
         height: 380px;
-        left: 10px;
+        left: 31%;
         bottom: 122px;
-        transform: translateX(0); }
+        transform: translateX(-50%);
+        opacity: 1; }
         .intro .bg-hand__lightning {
           height: 17.5%;
           width: 76%;
-          top: 3%; }
+          top: 5%;
+          opacity: 1; }
         .intro .bg-hand__react {
-          width: 54px;
+          width: 54%;
           height: 48px;
-          top: 19px; }
+          top: 28px;
+          opacity: 1; }
       .intro .conf-stats {
         width: 100%;
         padding: 42px 20px 20px 40px;
@@ -3232,16 +3238,19 @@ a.sp-video:after {
     .pace-done .bg-hand {
       will-change: transform;
       animation-duration: 1.5s;
-      animation-name: hand-slidein; }
+      animation-name: hand-slidein;
+      animation-fill-mode: forwards; }
       .pace-done .bg-hand__lightning {
         will-change: transform;
         animation-duration: 1.8s;
-        animation-name: lightning-slidein; }
+        animation-name: lightning-slidein;
+        animation-fill-mode: forwards; }
       .pace-done .bg-hand__react {
         will-change: transform;
         animation-duration: 1.6s;
         animation-name: react-slidein;
-        perspective: 800px; }
+        perspective: 800px;
+        animation-fill-mode: forwards; }
   @keyframes hand-slidein {
     from {
       transform: translate(-43%, 50px); }

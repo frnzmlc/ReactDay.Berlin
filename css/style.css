@@ -2685,6 +2685,7 @@ a.sp-video:after {
     z-index: 2; }
   .location__address {
     position: absolute;
+    z-index: 10;
     width: 360px;
     top: 42px;
     right: -56px;
@@ -2694,6 +2695,11 @@ a.sp-video:after {
     color: #023753;
     padding: 37px 40px 33px;
     background: #fff; }
+    .location__address a {
+      color: #023753;
+      text-decoration: none; }
+      .location__address a:hover {
+        text-decoration: underline; }
   .location__follow-us {
     width: 100%;
     max-width: 580px;

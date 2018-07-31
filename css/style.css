@@ -1917,6 +1917,15 @@ a.sp-video:after {
       width: 77%;
       fill: #fff;
       opacity: 0; }
+    .intro .bg-hand #flashOfTheHorns {
+      position: absolute;
+      left: 50%;
+      height: 134px;
+      transform: translateX(-48%);
+      top: 5px;
+      width: 77%;
+      fill: #fff;
+      cursor: pointer; }
     .intro .bg-hand__react {
       position: absolute;
       fill: #fff;
@@ -1970,7 +1979,8 @@ a.sp-video:after {
 			height: 86vh;*/
         width: 240px;
         height: 546px; }
-        .intro .bg-hand__lightning {
+        .intro .bg-hand__lightning,
+        .intro .bg-hand #flashOfTheHorns {
           height: 92px; }
         .intro .bg-hand__react {
           height: 80px;
@@ -1995,7 +2005,8 @@ a.sp-video:after {
   @media only screen and (max-width: 1200px) {
     .intro .bg-hand {
       height: 460px; }
-      .intro .bg-hand__lightning {
+      .intro .bg-hand__lightning,
+      .intro .bg-hand #flashOfTheHorns {
         top: 3px;
         height: 78px;
         width: 157px; }
@@ -2057,7 +2068,8 @@ a.sp-video:after {
         bottom: 122px;
         transform: translateX(-50%);
         opacity: 1; }
-        .intro .bg-hand__lightning {
+        .intro .bg-hand__lightning,
+        .intro .bg-hand #flashOfTheHorns {
           height: 17.5%;
           width: 76%;
           top: 5%;
@@ -3036,7 +3048,8 @@ a.sp-video:after {
   .pace .bg-hand {
     will-change: transform;
     transform: translate(-43%, 50px); }
-    .pace .bg-hand__lightning {
+    .pace .bg-hand__lightning,
+    .pace .bg-hand #flashOfTheHorns {
       will-change: transform;
       opacity: 0; }
     .pace .bg-hand__react {
@@ -3279,6 +3292,57 @@ a.sp-video:after {
     100% {
       opacity: 1;
       transform: translateX(-50%) scale(1) rotateX(0) rotateZ(0); } } }
+
+#flashOfTheHorns.blum #flash > g {
+  animation: flashIn .3s,  flashOut .3s;
+  animation-fill-mode: backwards, forwards;
+  opacity: 0; }
+
+#flashOfTheHorns.blum #flash > g:nth-child(0) {
+  animation-delay: 500, 2450ms; }
+
+#flashOfTheHorns.blum #flash > g:nth-child(1) {
+  animation-delay: 650ms, 2200ms; }
+
+#flashOfTheHorns.blum #flash > g:nth-child(2) {
+  animation-delay: 800ms, 2050ms; }
+
+#flashOfTheHorns.blum #flash > g:nth-child(3) {
+  animation-delay: 950ms, 1900ms; }
+
+#flashOfTheHorns.blum #flash > g:nth-child(4) {
+  animation-delay: 1100ms, 1750ms; }
+
+#flashOfTheHorns.blum-blum #flash > g {
+  animation: flashIn .3s,  flashOut .3s;
+  animation-fill-mode: backwards, forwards; }
+
+#flashOfTheHorns.blum-blum #flash > g:nth-child(0) {
+  animation-delay: 0, 1450ms; }
+
+#flashOfTheHorns.blum-blum #flash > g:nth-child(1) {
+  animation-delay: 150ms, 1700ms; }
+
+#flashOfTheHorns.blum-blum #flash > g:nth-child(2) {
+  animation-delay: 300ms, 1550ms; }
+
+#flashOfTheHorns.blum-blum #flash > g:nth-child(3) {
+  animation-delay: 450ms, 1400ms; }
+
+#flashOfTheHorns.blum-blum #flash > g:nth-child(4) {
+  animation-delay: 600ms, 1250ms; }
+
+@keyframes flashOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes flashIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /* Footer
 -----------------------------------------------------------------------------*/

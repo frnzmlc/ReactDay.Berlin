@@ -164,7 +164,14 @@ $(function() {
 
 	/*---------------------------------------------------*/
 	
-
+	$('#flashOfTheHorns').click(function() {		
+		$(this).attr('class', '');
+			
+		setTimeout(function() {
+			$('#flashOfTheHorns').attr('class', 'blum');
+		}, 0);
+		
+	});
 
 	/*---------------------------------------------------*/
 

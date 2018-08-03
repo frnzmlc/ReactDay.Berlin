@@ -164,11 +164,11 @@ $(function() {
 
 	/*---------------------------------------------------*/
 	
-	$('#flashOfTheHorns').click(function() {		
-		$(this).attr('class', '');
+	$('body').click(function() {		
+		$('#flashOfTheHorns').attr('class', '');
 			
 		setTimeout(function() {
-			$('#flashOfTheHorns').attr('class', 'blum');
+			$('#flashOfTheHorns').attr('class', 'blum-blum');
 		}, 0);
 		
 	});

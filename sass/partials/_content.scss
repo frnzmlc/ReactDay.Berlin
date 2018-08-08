@@ -2315,54 +2315,54 @@
 
 
 #flashOfTheHorns.blum #flash > g {
-	animation: flashIn .3s,  flashOut .3s;
+	animation: flashIn .1s,  flashOut .1s;
 	animation-fill-mode: backwards, forwards;
 }
 
 #flashOfTheHorns.blum #flash > g:nth-child(0) {
-	animation-delay: 2500, 4450ms;
+	animation-delay: 2500, 2950ms;
 }
 
 #flashOfTheHorns.blum #flash > g:nth-child(1) {
-	animation-delay: 2650ms, 4200ms;
+	animation-delay: 2525ms, 2900ms;
 }
 
 #flashOfTheHorns.blum #flash > g:nth-child(2) {
-	animation-delay: 2800ms, 4050ms;
+	animation-delay: 2550ms, 2850ms;
 }
 
 #flashOfTheHorns.blum #flash > g:nth-child(3) {
-	animation-delay: 2950ms, 3900ms;
+	animation-delay: 2575ms, 2800ms;
 }
 
 #flashOfTheHorns.blum #flash > g:nth-child(4) {
-	animation-delay: 3100ms, 3750ms;
+	animation-delay: 2600ms, 2750ms;/*+650*/
 }
 
 
 #flashOfTheHorns.blum-blum #flash > g {
-	animation: flashIn .3s,  flashOut .3s;
+	animation: flashIn .1s,  flashOut .1s;
 	animation-fill-mode: backwards, forwards;
 }
 
 #flashOfTheHorns.blum-blum #flash > g:nth-child(0) {
-	animation-delay: 0, 1250ms;
+	animation-delay: 0, 550ms;
 }
 
 #flashOfTheHorns.blum-blum #flash > g:nth-child(1) {
-	animation-delay: 50ms, 1500ms;
+	animation-delay: 25ms, 500ms;
 }
 
 #flashOfTheHorns.blum-blum #flash > g:nth-child(2) {
-	animation-delay: 200ms, 1250ms;
+	animation-delay: 50ms, 450ms;
 }
 
 #flashOfTheHorns.blum-blum #flash > g:nth-child(3) {
-	animation-delay: 350ms, 1200ms;
+	animation-delay: 75ms, 400ms;
 }
 
 #flashOfTheHorns.blum-blum #flash > g:nth-child(4) {
-	animation-delay: 500ms, 1050ms;
+	animation-delay: 100ms, 350ms;
 }
 
 @keyframes flashOut {
